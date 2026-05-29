@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About — Hicksville Optical · A Neighborhood Practice on Long Island</title>
+<meta name="description" content="Twenty-five years of unhurried eye care on Newbridge Road. Meet the practice behind Hicksville Optical." />
+<link rel="canonical" href="https://hicksvilleoptical.com/about" />
+<link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:#faf8f5;color:#1a1a1a;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{font-family:'Inter',system-ui,sans-serif;background:#faf8f5;color:#1a1a1a;overflow-x:hidden;font-weight:400;line-height:1.6;font-size:16px}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;background:none;border:0;color:inherit}
+ul,ol{list-style:none}
+input,select,textarea{font:inherit;color:inherit;background:transparent;border:0;outline:none}
+::selection{background:#1f4d3e;color:#faf8f5}
+:root{--paper:#faf8f5;--paper-2:#f0ece4;--paper-3:#e6e1d5;--ink:#1a1a1a;--ink-2:#3a3a3a;--ink-3:#6e6e6e;--line:#d8d3c5;--line-2:#bdb7a8;--green:#1f4d3e;--green-d:#163d31;--green-l:#2d6b56;--gold:#b6904a}
+.eyebrow{font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--green);font-weight:500;display:inline-flex;align-items:center;gap:14px}
+.eyebrow::before{content:'';display:block;width:32px;height:1px;background:var(--green)}
+.wrap{max-width:1340px;margin:0 auto;padding:0 24px}
+@media(min-width:768px){.wrap{padding:0 48px}}
+.topbar{background:var(--ink);color:var(--paper);font-size:12px;font-weight:500;letter-spacing:.04em}
+.topbar .row{max-width:1340px;margin:0 auto;padding:10px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+@media(min-width:768px){.topbar .row{padding:10px 48px}}
+.topbar .left{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.topbar .right{display:flex;gap:20px;align-items:center}
+.topbar a:hover{opacity:.75}
+.topbar .hide-sm{display:none}
+@media(min-width:600px){.topbar .hide-sm{display:inline}}
+.lang-toggle button{font:inherit;color:var(--paper);opacity:.6;padding:2px 6px;transition:opacity .2s}
+.lang-toggle button.active{opacity:1;border-bottom:1px solid var(--paper)}
+.header{position:sticky;top:0;z-index:60;background:var(--paper);border-bottom:1px solid var(--line);transition:background .3s}
+.header.scrolled{background:rgba(250,248,245,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.header .row{max-width:1340px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+@media(min-width:768px){.header .row{padding:22px 48px}}
+.logo{display:flex;align-items:center;gap:14px}
+.logo img{width:auto;height:46px;object-fit:contain}
+@media(min-width:768px){.logo img{height:54px}}
+.logo-text{display:none;flex-direction:column;line-height:1.1}
+@media(min-width:600px){.logo-text{display:flex}}
+.logo-text .l1{font-family:'DM Serif Display',serif;font-size:18px;letter-spacing:-.01em;color:var(--ink)}
+.logo-text .l2{font-family:'Inter';font-size:9px;letter-spacing:.28em;color:var(--ink-3);text-transform:uppercase;margin-top:4px;font-weight:500}
+.nav{display:none;gap:36px;align-items:center}
+@media(min-width:960px){.nav{display:flex}}
+.nav a{font-family:'Inter';font-size:13px;font-weight:500;letter-spacing:.02em;color:var(--ink);position:relative;padding:8px 0}
+.nav a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--green);transform:scaleX(0);transform-origin:right;transition:transform .4s cubic-bezier(.16,1,.3,1)}
+.nav a:hover::after,.nav a.active::after{transform:scaleX(1);transform-origin:left}
+.nav a.active{color:var(--green)}
+.header-cta{display:flex;align-items:center;gap:12px}
+.menu-btn{display:grid;place-items:center;width:44px;height:44px;color:var(--ink)}
+@media(min-width:960px){.menu-btn{display:none}}
+.menu-panel{position:fixed;top:0;right:0;bottom:0;width:min(360px,86vw);background:var(--paper);border-left:1px solid var(--line);padding:96px 28px 28px;display:flex;flex-direction:column;gap:24px;z-index:90;transform:translateX(100%);transition:transform .45s cubic-bezier(.85,0,.15,1);box-shadow:-20px 0 60px rgba(0,0,0,.06)}
+.menu-panel.open{transform:translateX(0)}
+.menu-panel a{font-family:'DM Serif Display',serif;font-size:32px;color:var(--ink);line-height:1.1}
+.menu-panel a:hover{color:var(--green)}
+.menu-panel .mclose{position:absolute;top:20px;right:24px;width:40px;height:40px;display:grid;place-items:center;color:var(--ink);font-size:28px;line-height:1}
+.menu-back{position:fixed;inset:0;background:rgba(0,0,0,.4);opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s;z-index:89}
+.menu-back.open{opacity:1;visibility:visible}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 28px;font-family:'Inter';font-size:13px;letter-spacing:.05em;font-weight:500;transition:all .3s ease;cursor:pointer;border-radius:999px;border:1px solid transparent}
+.btn-green{background:var(--green);color:var(--paper);border-color:var(--green)}
+.btn-green:hover{background:var(--green-d);border-color:var(--green-d);transform:translateY(-1px);box-shadow:0 8px 24px rgba(31,77,62,.18)}
+.btn-line{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--paper)}
+.btn-sm{padding:11px 22px;font-size:12px}
+.btn-arrow{display:inline-flex;align-items:center;gap:8px;font-family:'Inter';font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);padding:4px 0;border-bottom:1px solid var(--ink);transition:gap .25s,color .25s,border-color .25s}
+.btn-arrow:hover{gap:14px;color:var(--green);border-color:var(--green)}
+
+/* === HERO === */
+.phero{padding:48px 0 64px;border-bottom:1px solid var(--line)}
+@media(min-width:768px){.phero{padding:80px 0 96px}}
+.phero-grid{display:grid;grid-template-columns:1fr;gap:32px;align-items:end}
+@media(min-width:900px){.phero-grid{grid-template-columns:7fr 5fr;gap:80px}}
+.phero h1{font-family:'DM Serif Display',serif;font-size:clamp(48px,7vw,96px);line-height:1;letter-spacing:-.015em;color:var(--ink);margin-top:18px}
+.phero h1 .it{font-family:'DM Serif Display',serif;font-style:italic;color:var(--green)}
+.phero-sub{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--ink-2);line-height:1.45;max-width:480px}
+.breadcrumb{font-family:'Inter';font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);font-weight:500;margin-bottom:12px}
+.breadcrumb a:hover{color:var(--green)}
+.breadcrumb span{color:var(--green)}
+
+/* === STORY === */
+.story{padding:96px 0}
+.story-grid{display:grid;grid-template-columns:1fr;gap:48px;align-items:start}
+@media(min-width:1024px){.story-grid{grid-template-columns:5fr 7fr;gap:96px}}
+.story-img-stack{position:relative}
+.story-img{aspect-ratio:4/5;overflow:hidden;background:var(--paper-2);position:relative}
+.story-img img{width:100%;height:100%;object-fit:cover;filter:contrast(1.04) saturate(.92)}
+.story-img .overlay{position:absolute;inset:18px;border:1px solid rgba(255,255,255,.4);pointer-events:none}
+.story-caption{position:absolute;bottom:18px;left:18px;right:18px;color:var(--paper);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;line-height:1.4;background:linear-gradient(180deg,transparent,rgba(0,0,0,.55));padding:36px 18px 0;z-index:1}
+.story-caption .n{font-family:'Inter';font-style:normal;font-size:10px;letter-spacing:.32em;text-transform:uppercase;opacity:.7;font-weight:500;display:block;margin-bottom:6px}
+.story-text h2{font-family:'DM Serif Display',serif;font-size:clamp(38px,5vw,68px);line-height:1;letter-spacing:-.01em;color:var(--ink);margin:18px 0 32px}
+.story-text h2 .it{font-style:italic;color:var(--green)}
+.story-text p{font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.55;color:var(--ink-2);margin-bottom:22px}
+.story-text p:first-of-type::first-letter{font-family:'DM Serif Display',serif;font-size:72px;line-height:.85;float:left;padding:6px 16px 0 0;color:var(--green);font-style:italic}
+.story-text .pull{font-family:'DM Serif Display',serif;font-style:italic;font-size:clamp(28px,3.5vw,40px);line-height:1.15;color:var(--green);padding:32px 0;margin:32px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}
+
+/* === TIMELINE === */
+.tl-band{background:var(--paper-2);padding:96px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.tl-head{margin-bottom:64px;max-width:680px}
+.tl-head h2{font-family:'DM Serif Display',serif;font-size:clamp(36px,5vw,64px);line-height:1;letter-spacing:-.01em;color:var(--ink);margin-top:18px}
+.tl-head h2 .it{font-style:italic;color:var(--green)}
+.tl{position:relative}
+.tl::before{content:'';position:absolute;top:0;bottom:0;left:20px;width:1px;background:var(--line)}
+@media(min-width:768px){.tl::before{left:120px}}
+.tl-item{position:relative;padding:24px 0 24px 56px;border-bottom:1px solid var(--line)}
+@media(min-width:768px){.tl-item{padding:36px 0 36px 180px}}
+.tl-item::before{content:'';position:absolute;left:14px;top:36px;width:13px;height:13px;border-radius:50%;background:var(--green);border:2px solid var(--paper-2)}
+@media(min-width:768px){.tl-item::before{left:114px}}
+.tl-year{position:absolute;left:0;top:24px;font-family:'DM Serif Display',serif;font-size:22px;color:var(--green);letter-spacing:-.01em;display:none}
+@media(min-width:768px){.tl-year{display:block;top:32px;font-size:28px}}
+.tl-year-sm{font-family:'DM Serif Display',serif;font-size:18px;color:var(--green);margin-bottom:4px;display:block}
+@media(min-width:768px){.tl-year-sm{display:none}}
+.tl-item h3{font-family:'DM Serif Display',serif;font-size:clamp(22px,2.8vw,30px);line-height:1.15;color:var(--ink);margin-bottom:10px}
+.tl-item p{font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.5;color:var(--ink-2);font-style:italic;max-width:620px}
+
+/* === VALUES === */
+.values{padding:96px 0}
+.v-grid{display:grid;grid-template-columns:1fr;gap:32px;margin-top:56px}
+@media(min-width:768px){.v-grid{grid-template-columns:repeat(2,1fr);gap:48px}}
+.v-card{padding:36px 0;border-top:1px solid var(--line)}
+.v-num{font-family:'Inter';font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--green);font-weight:500;margin-bottom:14px}
+.v-card h3{font-family:'DM Serif Display',serif;font-size:clamp(26px,3vw,34px);line-height:1.1;color:var(--ink);margin-bottom:14px}
+.v-card h3 .it{font-style:italic;color:var(--green)}
+.v-card p{font-family:'Cormorant Garamond',serif;font-size:19px;line-height:1.5;color:var(--ink-2)}
+
+/* === TEAM === */
+.team{padding:96px 0;background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.team-grid{display:grid;grid-template-columns:1fr;gap:48px;margin-top:56px}
+@media(min-width:640px){.team-grid{grid-template-columns:repeat(2,1fr);gap:40px}}
+@media(min-width:960px){.team-grid{grid-template-columns:repeat(3,1fr);gap:48px}}
+.tcard{background:var(--paper);overflow:hidden}
+.tcard-img{aspect-ratio:4/5;overflow:hidden;background:var(--paper-3)}
+.tcard-img img{width:100%;height:100%;object-fit:cover;filter:grayscale(.3) contrast(1.04)}
+.tcard-meta{padding:28px 24px}
+.tcard-role{font-family:'Inter';font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--green);font-weight:500;margin-bottom:8px}
+.tcard h3{font-family:'DM Serif Display',serif;font-size:26px;line-height:1.1;color:var(--ink);margin-bottom:12px}
+.tcard p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;line-height:1.5;color:var(--ink-2)}
+.tcard .credentials{margin-top:14px;font-family:'Inter';font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+
+/* === NUMBERS === */
+.numbers{padding:96px 0;background:var(--ink);color:var(--paper)}
+.n-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
+@media(min-width:768px){.n-grid{grid-template-columns:repeat(4,1fr);gap:48px}}
+.n-cell{text-align:left;border-top:1px solid rgba(250,248,245,.18);padding-top:24px}
+.n-big{font-family:'DM Serif Display',serif;font-size:clamp(48px,6vw,84px);line-height:1;letter-spacing:-.02em;color:var(--paper);margin-bottom:10px}
+.n-big .it{font-style:italic;color:var(--gold)}
+.n-lab{font-family:'Inter';font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(250,248,245,.65);font-weight:500}
+
+/* === CTA BLOCK === */
+.cta-block{padding:96px 0;background:var(--paper-2)}
+@media(min-width:768px){.cta-block{padding:128px 0}}
+.cta-block h2{font-family:'DM Serif Display',serif;font-size:clamp(40px,6vw,80px);line-height:1.02;color:var(--ink);margin:24px 0 18px;max-width:880px}
+.cta-block h2 .it{font-style:italic;color:var(--green)}
+.cta-block p{font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.5;color:var(--ink-2);max-width:540px;margin-bottom:36px}
+
+/* === FOOTER === */
+.foot{background:var(--paper);padding:80px 0 32px;border-top:1px solid var(--line)}
+.foot-grid{display:grid;grid-template-columns:1fr;gap:48px}
+@media(min-width:768px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1.5fr}}
+.foot h4{font-family:'Inter';font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-3);font-weight:500;margin-bottom:18px}
+.foot a{display:block;font-family:'Inter';font-size:14px;color:var(--ink-2);padding:6px 0;transition:color .2s}
+.foot a:hover{color:var(--green)}
+.foot p{font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.5;color:var(--ink-2);max-width:340px;margin-top:20px;font-style:italic}
+.foot .big-phone{font-family:'DM Serif Display',serif;font-size:26px;color:var(--ink);letter-spacing:-.01em}
+.foot .copy{display:flex;flex-direction:column;gap:8px;margin-top:48px;padding-top:24px;border-top:1px solid var(--line);font-family:'Inter';font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+@media(min-width:768px){.foot .copy{flex-direction:row;justify-content:space-between;align-items:center}}
+
+.mob-cta{position:fixed;bottom:0;left:0;right:0;background:var(--paper);border-top:1px solid var(--line);padding:12px;display:flex;gap:10px;z-index:55;box-shadow:0 -8px 24px rgba(0,0,0,.06)}
+.mob-cta a{flex:1;padding:14px;text-align:center;font-family:'Inter';font-size:12px;letter-spacing:.12em;font-weight:500;border-radius:999px}
+@media(min-width:960px){.mob-cta{display:none}}
+
+/* === MODAL === */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.5);backdrop-filter:blur(6px);z-index:200;display:none;align-items:center;justify-content:center;padding:24px}
+.modal.open{display:flex}
+.modal-card{background:var(--paper);max-width:520px;width:100%;padding:40px 32px;position:relative;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.18);max-height:92vh;overflow-y:auto}
+@media(min-width:600px){.modal-card{padding:48px 44px}}
+.modal-x{position:absolute;top:16px;right:20px;color:var(--ink-3);font-size:28px;line-height:1;transition:color .2s,transform .25s}
+.modal-x:hover{color:var(--green);transform:rotate(90deg)}
+.modal h3{font-family:'DM Serif Display',serif;font-size:32px;line-height:1.05;color:var(--ink);margin:14px 0 10px}
+.modal h3 .it{font-style:italic;color:var(--green)}
+.modal > .modal-card > p{font-family:'Cormorant Garamond',serif;font-size:19px;font-style:italic;color:var(--ink-2);margin-bottom:24px;line-height:1.4}
+.modal-services{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
+.modal-service{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;background:var(--paper-2);border:1px solid transparent;transition:border-color .25s,background .25s;cursor:pointer}
+.modal-service:hover{border-color:var(--green);background:var(--paper)}
+.modal-service.selected{border-color:var(--green);background:rgba(31,77,62,.05)}
+.modal-service .ms-name{font-family:'DM Serif Display',serif;font-size:18px;color:var(--ink)}
+.modal-service .ms-time{font-family:'Inter';font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+.field-label{font-family:'Inter';font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px;display:block;font-weight:500}
+.field-label .req{color:var(--green)}
+.input{width:100%;background:var(--paper);border:1px solid var(--line-2);padding:13px 16px;color:var(--ink);font-family:'Inter';font-size:14px;outline:none;transition:border-color .25s;font-weight:400}
+.input:focus{border-color:var(--green)}
+.input::placeholder{color:var(--ink-3)}
+.form-row{margin-bottom:16px}
+.form-row.col2{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:520px){.form-row.col2{grid-template-columns:1fr 1fr}}
+
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:translateY(0)}
+.stagger > *{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+.stagger.in > *{opacity:1;transform:translateY(0)}
+.stagger.in > *:nth-child(1){transition-delay:0s}
+.stagger.in > *:nth-child(2){transition-delay:.08s}
+.stagger.in > *:nth-child(3){transition-delay:.16s}
+.stagger.in > *:nth-child(4){transition-delay:.24s}
+.stagger.in > *:nth-child(5){transition-delay:.32s}
+.stagger.in > *:nth-child(6){transition-delay:.40s}
+
+@media(max-width:768px){
+  body{font-size:15px;padding-bottom:64px}
+  .topbar{font-size:11px}
+  .topbar .row{padding:8px 20px;gap:10px}
+  .topbar .left{gap:14px}
+  .header .row{padding:16px 20px}
+  .wrap{padding:0 20px}
+  .phero{padding:36px 0 52px}
+  .phero h1{font-size:44px}
+  .phero-sub{font-size:18px}
+  .story{padding:64px 0}
+  .story-text h2{font-size:34px;margin:14px 0 24px}
+  .story-text p{font-size:19px}
+  .story-text p:first-of-type::first-letter{font-size:52px}
+  .story-text .pull{font-size:24px;padding:24px 0;margin:24px 0}
+  .tl-band{padding:64px 0}
+  .tl-item{padding:20px 0 20px 44px}
+  .tl-item h3{font-size:20px}
+  .tl-item p{font-size:16px}
+  .values{padding:64px 0}
+  .v-card{padding:28px 0}
+  .v-card p{font-size:17px}
+  .team{padding:64px 0}
+  .team-grid{gap:28px}
+  .tcard h3{font-size:22px}
+  .tcard p{font-size:16px}
+  .numbers{padding:56px 0}
+  .n-big{font-size:48px}
+  .cta-block{padding:64px 0}
+  .cta-block h2{font-size:40px;margin:18px 0 14px}
+  .cta-block p{font-size:18px;margin-bottom:24px}
+  .foot{padding:56px 0 28px}
+  .foot-grid{gap:32px}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="row">
+    <div class="left">
+      <span data-en="Mon–Sat · 10:00 AM – 6:00 PM" data-es="Lun–Sáb · 10:00 AM – 6:00 PM">Mon–Sat · 10:00 AM – 6:00 PM</span>
+      <span class="hide-sm">129 Newbridge Rd · Hicksville, NY</span>
+    </div>
+    <div class="right">
+      <a href="tel:+15169311010">(516) 931-1010</a>
+      <div class="lang-toggle">
+        <button data-lang="en" class="active">EN</button>
+        <span style="opacity:.3">·</span>
+        <button data-lang="es">ES</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="row">
+    <a href="index.html" class="logo">
+      <img src="assets/brand/logo.jpg" alt="Hicksville Optical"/>
+      <div class="logo-text">
+        <span class="l1">Hicksville Optical</span>
+        <span class="l2">Est. Hicksville · NY</span>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="services.html" data-en="Services" data-es="Servicios">Services</a>
+      <a href="eyewear.html" data-en="Eyewear" data-es="Lentes">Eyewear</a>
+      <a href="about.html" class="active" data-en="About" data-es="Nosotros">About</a>
+      <a href="contact.html" data-en="Visit" data-es="Visítanos">Visit</a>
+    </nav>
+    <div class="header-cta">
+      <a href="#" data-book class="btn btn-green btn-sm" data-en="Book Exam" data-es="Reservar">Book Exam</a>
+      <button id="menuBtn" class="menu-btn" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="menu-back" id="menuBack"></div>
+<aside class="menu-panel" id="menuPanel">
+  <button class="mclose" id="menuClose" aria-label="Close">×</button>
+  <a href="services.html" data-en="Services" data-es="Servicios">Services</a>
+  <a href="eyewear.html" data-en="Eyewear" data-es="Lentes">Eyewear</a>
+  <a href="about.html" data-en="About" data-es="Nosotros">About</a>
+  <a href="contact.html" data-en="Visit" data-es="Visítanos">Visit</a>
+  <div style="margin-top:auto;padding-top:24px;border-top:1px solid var(--line)">
+    <a href="tel:+15169311010" style="font-family:'DM Serif Display',serif;font-size:22px;color:var(--green)">(516) 931-1010</a>
+    <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--ink-3);margin-top:6px">129 Newbridge Rd<br>Hicksville, NY 11801</p>
+  </div>
+</aside>
+
+<!-- HERO -->
+<section class="phero">
+  <div class="wrap">
+    <div class="phero-grid">
+      <div class="reveal">
+        <div class="breadcrumb"><a href="index.html">Home</a> / <span data-en="About" data-es="Nosotros">About</span></div>
+        <div class="eyebrow" data-en="The Practice · Est. 1998" data-es="El Consultorio · Est. 1998">The Practice · Est. 1998</div>
+        <h1><span data-en="Twenty-five years." data-es="Veinticinco años.">Twenty-five years.</span><br><span class="it" data-en="Same chair." data-es="Misma silla.">Same chair.</span></h1>
+      </div>
+      <p class="phero-sub reveal" data-en="A practice that takes its time. Same family doors, same Newbridge Road address — and a frame wall that still gets re-curated every season." data-es="Un consultorio que se toma su tiempo. Misma puerta familiar, misma dirección en Newbridge Road — y un estante de armazones que se renueva cada temporada.">A practice that takes its time. Same family doors, same Newbridge Road address — and a frame wall that still gets re-curated every season.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story">
+  <div class="wrap">
+    <div class="story-grid">
+      <div class="story-img-stack reveal">
+        <div class="story-img">
+          <img src="https://images.unsplash.com/photo-1577744486770-020ab432da65?auto=format&fit=crop&w=1100&q=85" alt="The practice"/>
+          <div class="overlay"></div>
+          <div class="story-caption">
+            <span class="n">Plate 02 · The Studio</span>
+            <span data-en="Hicksville Optical · 129 Newbridge Rd." data-es="Hicksville Optical · 129 Newbridge Rd.">Hicksville Optical · 129 Newbridge Rd.</span>
+          </div>
+        </div>
+      </div>
+      <div class="story-text reveal">
+        <div class="eyebrow" data-en="The Story" data-es="La Historia">The Story</div>
+        <h2><span data-en="The shop opened" data-es="La óptica abrió">The shop opened</span><br><span class="it" data-en="on a quiet promise." data-es="con una promesa simple.">on a quiet promise.</span></h2>
+        <p data-en="Hicksville Optical opened on Newbridge Road in 1998 with one rule taped to the back of the front-desk computer: don't rush the exam. The handwriting has faded, the computer has been replaced four times, and the rule is still there." data-es="Hicksville Optical abrió en Newbridge Road en 1998 con una regla pegada en la espalda de la computadora de recepción: no apurar el examen. La letra se ha desvanecido, la computadora se ha reemplazado cuatro veces, y la regla sigue ahí.">Hicksville Optical opened on Newbridge Road in 1998 with one rule taped to the back of the front-desk computer: don't rush the exam. The handwriting has faded, the computer has been replaced four times, and the rule is still there.</p>
+        <p data-en="The practice has stayed independent on purpose. No corporate quotas, no upsell scripts, no "premium package" pushed at checkout. The frame wall changes when something better shows up at a trade show, not when a sales rep brings croissants." data-es="El consultorio se ha mantenido independiente por elección. Sin cuotas corporativas, sin scripts de venta, sin "paquete premium" forzado al final. El estante cambia cuando aparece algo mejor en una feria, no cuando un vendedor trae croissants.">The practice has stayed independent on purpose. No corporate quotas, no upsell scripts, no "premium package" pushed at checkout. The frame wall changes when something better shows up at a trade show, not when a sales rep brings croissants.</p>
+        <div class="pull" data-en="&ldquo;Don't rush the exam.&rdquo;" data-es="&ldquo;No apures el examen.&rdquo;">"Don't rush the exam."</div>
+        <p data-en="The patients have stayed too. Three-generation families now — grandparents who came in 1998, parents who came as teenagers, kids walking in on their own. Some still ask if the same little waiting-room lamp is the same lamp from twenty years ago. It is." data-es="Los pacientes también se han quedado. Familias de tres generaciones — abuelos que vinieron en 1998, padres que vinieron de adolescentes, hijos que vienen solos. Algunos preguntan si la lámpara de la sala es la misma de hace veinte años. Lo es.">The patients have stayed too. Three-generation families now — grandparents who came in 1998, parents who came as teenagers, kids walking in on their own. Some still ask if the same little waiting-room lamp is the same lamp from twenty years ago. It is.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="tl-band">
+  <div class="wrap">
+    <div class="tl-head reveal">
+      <div class="eyebrow" data-en="Milestones" data-es="Hitos">Milestones</div>
+      <h2><span data-en="A practice," data-es="Un consultorio,">A practice,</span><br><span class="it" data-en="step by step." data-es="paso a paso.">step by step.</span></h2>
+    </div>
+    <div class="tl stagger">
+      <div class="tl-item">
+        <div class="tl-year">1998</div>
+        <div>
+          <span class="tl-year-sm">1998</span>
+          <h3 data-en="Doors open on Newbridge Road" data-es="Abren las puertas en Newbridge Road">Doors open on Newbridge Road</h3>
+          <p data-en="A 600 sq ft storefront, a single exam chair, and twelve frames on the wall — including a tortoise Persol that took six months to sell." data-es="Una tienda de 600 sq ft, una silla de examen, y doce armazones en la pared — incluyendo un Persol carey que tardó seis meses en venderse.">A 600 sq ft storefront, a single exam chair, and twelve frames on the wall.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2005</div>
+        <div>
+          <span class="tl-year-sm">2005</span>
+          <h3 data-en="The frame wall doubles" data-es="El estante se duplica">The frame wall doubles</h3>
+          <p data-en="Independent brands like Garrett Leight and Mr. Leight come to the shelf. The wall pushes back into the second exam room — which becomes the styling room." data-es="Marcas independientes como Garrett Leight y Mr. Leight llegan al estante. El estante se extiende a la segunda sala de examen — que se convierte en la sala de estilismo.">Independent brands like Garrett Leight come to the shelf.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2012</div>
+        <div>
+          <span class="tl-year-sm">2012</span>
+          <h3 data-en="Digital retinal imaging added" data-es="Se añade imagen retinal digital">Digital retinal imaging added</h3>
+          <p data-en="Dilation drops become optional. The wait time in the parking lot for blurry-vision patients drops to zero." data-es="Las gotas dilatadoras se vuelven opcionales. La espera en el estacionamiento por visión borrosa cae a cero.">Dilation drops become optional.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2017</div>
+        <div>
+          <span class="tl-year-sm">2017</span>
+          <h3 data-en="Dry eye therapy clinic launched" data-es="Se lanza clínica de ojo seco">Dry eye therapy clinic launched</h3>
+          <p data-en="Long Island's screen-time problem meets its match. The clinic becomes a referral destination for surrounding zip codes." data-es="El problema de pantallas de Long Island encuentra solución. La clínica se vuelve destino de referencia para zip codes vecinos.">Long Island's screen-time problem meets its match.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2023</div>
+        <div>
+          <span class="tl-year-sm">2023</span>
+          <h3 data-en="Three-generation milestone" data-es="Hito de tres generaciones">Three-generation milestone</h3>
+          <p data-en="The first patient who came as a baby in 1998 walks in with her own infant. The rule on the back of the computer remains taped." data-es="La primera paciente que vino de bebé en 1998 entra con su propio bebé. La regla atrás de la computadora sigue pegada.">The first patient who came as a baby in 1998 walks in with her own infant.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="values">
+  <div class="wrap">
+    <div class="reveal" style="max-width:680px">
+      <div class="eyebrow" data-en="What stays the same" data-es="Lo que no cambia">What stays the same</div>
+      <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(36px,5vw,64px);line-height:1;letter-spacing:-.01em;color:var(--ink);margin-top:18px"><span data-en="Four rules." data-es="Cuatro reglas.">Four rules.</span> <span style="font-style:italic;color:var(--green)" data-en="Same as ever." data-es="Las mismas de siempre.">Same as ever.</span></h2>
+    </div>
+    <div class="v-grid stagger">
+      <div class="v-card">
+        <div class="v-num">01</div>
+        <h3><span data-en="Don't rush" data-es="No apurar">Don't rush</span> <span class="it" data-en="the exam." data-es="el examen.">the exam.</span></h3>
+        <p data-en="A 60-minute new-patient exam is 60 minutes — not 22 with a "we're booked" excuse. We don't double-book." data-es="Un examen de paciente nuevo de 60 minutos son 60 minutos — no 22 con la excusa de "estamos llenos". No doble-reservamos.">A 60-minute new-patient exam is 60 minutes — not 22 with a "we're booked" excuse.</p>
+      </div>
+      <div class="v-card">
+        <div class="v-num">02</div>
+        <h3><span data-en="Don't sell" data-es="No vender">Don't sell</span> <span class="it" data-en="the catalogue." data-es="el catálogo.">the catalogue.</span></h3>
+        <p data-en="No commission-driven upsell. If the $185 frame fits your face better than the $485 one, we say so." data-es="Sin venta forzada por comisión. Si el armazón de $185 te queda mejor que el de $485, lo decimos.">No commission-driven upsell. If the $185 frame fits your face better than the $485 one, we say so.</p>
+      </div>
+      <div class="v-card">
+        <div class="v-num">03</div>
+        <h3><span data-en="Don't hide" data-es="No esconder">Don't hide</span> <span class="it" data-en="the price." data-es="el precio.">the price.</span></h3>
+        <p data-en="Every frame on the wall has a tag. Every lens add-on is listed in writing before you commit. No "we'll see at the desk" surprises." data-es="Cada armazón en el estante tiene precio. Cada add-on de lente se lista por escrito antes de que decidas. Sin sorpresas en recepción.">Every frame on the wall has a tag.</p>
+      </div>
+      <div class="v-card">
+        <div class="v-num">04</div>
+        <h3><span data-en="Don't forget" data-es="No olvidar">Don't forget</span> <span class="it" data-en="the name." data-es="el nombre.">the name.</span></h3>
+        <p data-en="When you walk in, we know your name, your prescription, and what you tried on last time. The chart is open before you sit down." data-es="Cuando entras, sabemos tu nombre, tu receta, y lo que probaste la última vez. La historia está abierta antes de que te sientes.">When you walk in, we know your name and what you tried last time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team">
+  <div class="wrap">
+    <div class="reveal" style="max-width:680px">
+      <div class="eyebrow" data-en="The Bench" data-es="El Equipo">The Bench</div>
+      <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(36px,5vw,64px);line-height:1;letter-spacing:-.01em;color:var(--ink);margin-top:18px"><span data-en="Who you'll" data-es="Quién">Who you'll</span> <span style="font-style:italic;color:var(--green)" data-en="meet inside." data-es="te atiende.">meet inside.</span></h2>
+    </div>
+    <div class="team-grid stagger">
+      <div class="tcard">
+        <div class="tcard-img"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=85" alt="Doctor"/></div>
+        <div class="tcard-meta">
+          <div class="tcard-role" data-en="Optometrist · OD" data-es="Optometrista · OD">Optometrist · OD</div>
+          <h3>Dr. Anita Mehta</h3>
+          <p data-en="Twenty years on the chair. Specializes in dry eye therapy and pediatric vision development." data-es="Veinte años en el sillón. Especialista en terapia de ojo seco y desarrollo visual pediátrico.">Twenty years on the chair. Specializes in dry eye therapy and pediatric vision development.</p>
+          <div class="credentials">SUNY · Member AAO · Diplomate ABO</div>
+        </div>
+      </div>
+      <div class="tcard">
+        <div class="tcard-img"><img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=900&q=85" alt="Optician"/></div>
+        <div class="tcard-meta">
+          <div class="tcard-role" data-en="Master Optician" data-es="Óptica Maestra">Master Optician</div>
+          <h3>Marisol Rivera</h3>
+          <p data-en="Fits frames the old way — by face shape, bridge sit, and how you actually use your glasses." data-es="Adapta armazones a la vieja escuela — por forma de cara, asiento del puente, y cómo realmente usas los lentes.">Fits frames the old way — by face shape, bridge sit, and how you actually use your glasses.</p>
+          <div class="credentials">ABO Certified · 14 years</div>
+        </div>
+      </div>
+      <div class="tcard">
+        <div class="tcard-img"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=85" alt="Patient coord"/></div>
+        <div class="tcard-meta">
+          <div class="tcard-role" data-en="Patient Coordinator" data-es="Coordinadora">Patient Coordinator</div>
+          <h3>Jenna Park</h3>
+          <p data-en="The voice on the phone. Will verify your insurance before you arrive — usually in three minutes." data-es="La voz al teléfono. Verifica tu seguro antes de que llegues — usualmente en tres minutos.">The voice on the phone. Will verify your insurance before you arrive — usually in three minutes.</p>
+          <div class="credentials">VSP & EyeMed Specialist</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section class="numbers">
+  <div class="wrap">
+    <div class="reveal" style="max-width:540px;margin-bottom:48px">
+      <div class="eyebrow" style="color:var(--gold)"><span style="background:var(--gold);content:''" class="lab"></span>By the numbers</div>
+      <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(36px,5vw,56px);line-height:1;color:var(--paper);margin-top:18px"><span data-en="Twenty-five years," data-es="Veinticinco años,">Twenty-five years,</span><br><span style="font-style:italic;color:var(--gold)" data-en="not the round version." data-es="no la versión redondeada.">not the round version.</span></h2>
+    </div>
+    <div class="n-grid stagger">
+      <div class="n-cell">
+        <div class="n-big">25<span class="it">+</span></div>
+        <div class="n-lab" data-en="Years on Newbridge Rd" data-es="Años en Newbridge Rd">Years on Newbridge Rd</div>
+      </div>
+      <div class="n-cell">
+        <div class="n-big">40<span class="it">+</span></div>
+        <div class="n-lab" data-en="Frame brands stocked" data-es="Marcas en estante">Frame brands stocked</div>
+      </div>
+      <div class="n-cell">
+        <div class="n-big">4.9<span class="it">★</span></div>
+        <div class="n-lab" data-en="Google rating · 230 reviews" data-es="Google · 230 reseñas">Google rating · 230 reviews</div>
+      </div>
+      <div class="n-cell">
+        <div class="n-big">3</div>
+        <div class="n-lab" data-en="Generations of patients" data-es="Generaciones de pacientes">Generations of patients</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-block">
+  <div class="wrap reveal">
+    <div class="eyebrow" data-en="Come in" data-es="Visítanos">Come in</div>
+    <h2><span data-en="The chair is" data-es="La silla está">The chair is</span> <span class="it" data-en="ready." data-es="lista.">ready.</span></h2>
+    <p data-en="Book online or call (516) 931-1010. Most appointments confirmed within the hour." data-es="Reserva online o llama (516) 931-1010. La mayoría de citas confirmadas en menos de una hora.">Book online or call (516) 931-1010.</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <a href="#" data-book class="btn btn-green" data-en="Book Online" data-es="Reservar Online">Book Online <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="contact.html" class="btn btn-line" data-en="Visit the studio" data-es="Visita el estudio">Visit the studio</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html" class="logo">
+          <img src="assets/brand/logo.jpg" alt="Hicksville Optical" style="height:54px"/>
+          <div class="logo-text" style="display:flex">
+            <span class="l1">Hicksville Optical</span>
+            <span class="l2">Inc. · Newbridge Rd.</span>
+          </div>
+        </a>
+        <p data-en="A neighborhood optical practice on Long Island. Clear vision, considered design, time taken." data-es="Una óptica de barrio en Long Island.">A neighborhood optical practice on Long Island.</p>
+      </div>
+      <div>
+        <h4 data-en="Practice" data-es="Consultorio">Practice</h4>
+        <a href="services.html" data-en="Services" data-es="Servicios">Services</a>
+        <a href="eyewear.html" data-en="Eyewear" data-es="Lentes">Eyewear</a>
+        <a href="about.html" data-en="About" data-es="Nosotros">About</a>
+        <a href="contact.html" data-en="Visit" data-es="Visítanos">Visit</a>
+      </div>
+      <div>
+        <h4 data-en="Visit" data-es="Visítanos">Visit</h4>
+        <p style="margin-top:0;font-style:normal;font-family:Inter;font-size:14px;color:var(--ink-2);line-height:1.6">129 Newbridge Rd<br>Hicksville, NY 11801</p>
+        <a href="https://maps.google.com/?q=129+Newbridge+Rd+Hicksville+NY" target="_blank" style="color:var(--green);font-weight:500;margin-top:10px">Open in Maps →</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+15169311010" class="big-phone">(516) 931-1010</a>
+        <a href="mailto:hicksvilleoptical@gmail.com">hicksvilleoptical@gmail.com</a>
+        <p style="margin-top:8px;font-style:normal;font-family:Inter;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);font-weight:500">Mon–Sat · 10–6</p>
+      </div>
+    </div>
+    <div class="copy">
+      <div>© <span id="year"></span> Hicksville Optical Inc.</div>
+      <div data-en="Most major insurance accepted" data-es="Aceptamos los principales seguros">Most major insurance accepted</div>
+    </div>
+  </div>
+</footer>
+
+<div class="mob-cta">
+  <a href="tel:+15169311010" class="btn btn-line" data-en="Call" data-es="Llamar">Call</a>
+  <a href="#" data-book class="btn btn-green" data-en="Book Exam" data-es="Reservar">Book Exam</a>
+</div>
+
+<!-- MODAL -->
+<div id="bookModal" class="modal">
+  <div class="modal-card">
+    <button class="modal-x" data-close>×</button>
+    <div class="eyebrow">Booking</div>
+    <h3><span data-en="Select your" data-es="Selecciona tu">Select your</span> <span class="it" data-en="appointment." data-es="cita.">appointment.</span></h3>
+    <p data-en="Choose the visit type. We'll confirm within the hour." data-es="Elige el tipo de visita. Confirmamos en menos de una hora.">Choose the visit type.</p>
+    <div class="modal-services">
+      <div class="modal-service" data-svc="new-patient"><div><div class="ms-name" data-en="New Patient Exam" data-es="Paciente Nuevo">New Patient Exam</div></div><div class="ms-time">60 min</div></div>
+      <div class="modal-service" data-svc="existing-patient"><div><div class="ms-name" data-en="Existing Patient Exam" data-es="Paciente Existente">Existing Patient Exam</div></div><div class="ms-time">30 min</div></div>
+      <div class="modal-service" data-svc="contact-initial"><div><div class="ms-name" data-en="Contact Lens · Initial" data-es="Lentes · Inicial">Contact Lens · Initial</div></div><div class="ms-time">45 min</div></div>
+      <div class="modal-service" data-svc="contact-followup"><div><div class="ms-name" data-en="Contact Lens · Follow Up" data-es="Lentes · Seguimiento">Contact Lens · Follow Up</div></div><div class="ms-time">30 min</div></div>
+      <div class="modal-service" data-svc="other"><div><div class="ms-name" data-en="Other" data-es="Otro">Other</div></div><div class="ms-time">30 min</div></div>
+    </div>
+    <form data-fake>
+      <div class="form-row col2">
+        <div><label class="field-label">Name <span class="req">*</span></label><input class="input" required placeholder="Your name"/></div>
+        <div><label class="field-label">Phone <span class="req">*</span></label><input class="input" type="tel" required placeholder="(516) ..."/></div>
+      </div>
+      <div class="form-row col2">
+        <div><label class="field-label">Email</label><input class="input" type="email" placeholder="you@email.com"/></div>
+        <div><label class="field-label" data-en="Preferred date" data-es="Fecha preferida">Preferred date</label><input class="input" type="date"/></div>
+      </div>
+      <button type="submit" class="btn btn-green" style="width:100%"><span data-en="Request Appointment" data-es="Solicitar Cita">Request Appointment</span></button>
+      <div data-result style="display:none;margin-top:16px;padding:14px;background:rgba(31,77,62,.08);border-left:3px solid var(--green);color:var(--green);font-family:Inter;font-size:13px;font-weight:500">✓ Request received. We'll confirm by phone within the hour.</div>
+    </form>
+  </div>
+</div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+const hdr = document.getElementById('header');
+window.addEventListener('scroll', () => { hdr.classList.toggle('scrolled', window.scrollY > 12); }, {passive: true});
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+document.querySelectorAll('.reveal, .stagger').forEach(el => io.observe(el));
+
+const mb = document.getElementById('menuBtn'), mp = document.getElementById('menuPanel'), mback = document.getElementById('menuBack'), mclose = document.getElementById('menuClose');
+function openMenu(){ mp.classList.add('open'); mback.classList.add('open'); }
+function closeMenu(){ mp.classList.remove('open'); mback.classList.remove('open'); }
+mb && mb.addEventListener('click', openMenu);
+mclose && mclose.addEventListener('click', closeMenu);
+mback && mback.addEventListener('click', closeMenu);
+mp && mp.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+const I18N_KEY = 'hk-lang';
+function applyLang(lang) {
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-en],[data-es]').forEach(el => {
+    const v = el.getAttribute('data-' + lang);
+    if (v != null) el.textContent = v;
+  });
+  document.querySelectorAll('.lang-toggle button').forEach(b => b.classList.toggle('active', b.getAttribute('data-lang') === lang));
+  try { localStorage.setItem(I18N_KEY, lang); } catch(_) {}
+}
+const savedLang = (() => { try { return localStorage.getItem(I18N_KEY); } catch(_) { return null; } })() || 'en';
+applyLang(savedLang);
+document.querySelectorAll('.lang-toggle button[data-lang]').forEach(btn => btn.addEventListener('click', () => applyLang(btn.getAttribute('data-lang'))));
+
+const bm = document.getElementById('bookModal');
+document.querySelectorAll('[data-book]').forEach(el => el.addEventListener('click', (e) => { e.preventDefault(); bm.classList.add('open'); }));
+document.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', () => bm.classList.remove('open')));
+bm && bm.addEventListener('click', (e) => { if (e.target === bm) bm.classList.remove('open'); });
+
+document.querySelectorAll('.modal-service').forEach(s => s.addEventListener('click', () => {
+  document.querySelectorAll('.modal-service').forEach(x => x.classList.remove('selected'));
+  s.classList.add('selected');
+}));
+
+document.querySelectorAll('form[data-fake]').forEach(f => f.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const r = f.querySelector('[data-result]');
+  if (r) r.style.display = 'block';
+  f.reset();
+  document.querySelectorAll('.modal-service').forEach(x => x.classList.remove('selected'));
+}));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Services — Hicksville Optical · Eye Exams, Contact Lens Fittings & More</title>
+<meta name="description" content="Comprehensive eye exams, contact lens fittings, pediatric care, dry eye therapy and more — at Hicksville Optical in Hicksville, NY." />
+<link rel="canonical" href="https://hicksvilleoptical.com/services" />
+<link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:#faf8f5;color:#1a1a1a;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{font-family:'Inter',system-ui,sans-serif;background:#faf8f5;color:#1a1a1a;overflow-x:hidden;font-weight:400;line-height:1.6;font-size:16px}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;background:none;border:0;color:inherit}
+ul,ol{list-style:none}
+input,select,textarea{font:inherit;color:inherit;background:transparent;border:0;outline:none}
+::selection{background:#1f4d3e;color:#faf8f5}
+:root{--paper:#faf8f5;--paper-2:#f0ece4;--paper-3:#e6e1d5;--ink:#1a1a1a;--ink-2:#3a3a3a;--ink-3:#6e6e6e;--line:#d8d3c5;--line-2:#bdb7a8;--green:#1f4d3e;--green-d:#163d31;--green-l:#2d6b56;--gold:#b6904a}
+.eyebrow{font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--green);font-weight:500;display:inline-flex;align-items:center;gap:14px}
+.eyebrow::before{content:'';display:block;width:32px;height:1px;background:var(--green)}
+.wrap{max-width:1340px;margin:0 auto;padding:0 24px}
+@media(min-width:768px){.wrap{padding:0 48px}}
+.topbar{background:var(--ink);color:var(--paper);font-size:12px;font-weight:500;letter-spacing:.04em}
+.topbar .row{max-width:1340px;margin:0 auto;padding:10px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+@media(min-width:768px){.topbar .row{padding:10px 48px}}
+.topbar .left{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.topbar .right{display:flex;gap:20px;align-items:center}
+.topbar a:hover{opacity:.75}
+.topbar .hide-sm{display:none}
+@media(min-width:600px){.topbar .hide-sm{display:inline}}
+.lang-toggle button{font:inherit;color:var(--paper);opacity:.6;padding:2px 6px;transition:opacity .2s}
+.lang-toggle button.active{opacity:1;border-bottom:1px solid var(--paper)}
+.header{position:sticky;top:0;z-index:60;background:var(--paper);border-bottom:1px solid var(--line);transition:background .3s}
+.header.scrolled{background:rgba(250,248,245,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.header .row{max-width:1340px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+@media(min-width:768px){.header .row{padding:22px 48px}}
+.logo{display:flex;align-items:center;gap:14px}
+.logo img{width:auto;height:46px;object-fit:contain}
+@media(min-width:768px){.logo img{height:54px}}
+.logo-text{display:none;flex-direction:column;line-height:1.1}
+@media(min-width:600px){.logo-text{display:flex}}
+.logo-text .l1{font-family:'DM Serif Display',serif;font-size:18px;letter-spacing:-.01em;color:var(--ink)}
+.logo-text .l2{font-family:'Inter';font-size:9px;letter-spacing:.28em;color:var(--ink-3);text-transform:uppercase;margin-top:4px;font-weight:500}
+.nav{display:none;gap:36px;align-items:center}
+@media(min-width:960px){.nav{display:flex}}
+.nav a{font-family:'Inter';font-size:13px;font-weight:500;letter-spacing:.02em;color:var(--ink);position:relative;padding:8px 0}
+.nav a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--green);transform:scaleX(0);transform-origin:right;transition:transform .4s cubic-bezier(.16,1,.3,1)}
+.nav a:hover::after,.nav a.active::after{transform:scaleX(1);transform-origin:left}
+.nav a.active{color:var(--green)}
+.header-cta{display:flex;align-items:center;gap:12px}
+.menu-btn{display:grid;place-items:center;width:44px;height:44px;color:var(--ink)}
+@media(min-width:960px){.menu-btn{display:none}}
+.menu-panel{position:fixed;top:0;right:0;bottom:0;width:min(360px,86vw);background:var(--paper);border-left:1px solid var(--line);padding:96px 28px 28px;display:flex;flex-direction:column;gap:24px;z-index:90;transform:translateX(100%);transition:transform .45s cubic-bezier(.85,0,.15,1);box-shadow:-20px 0 60px rgba(0,0,0,.06)}
+.menu-panel.open{transform:translateX(0)}
+.menu-panel a{font-family:'DM Serif Display',serif;font-size:32px;color:var(--ink);line-height:1.1}
+.menu-panel a:hover{color:var(--green)}
+.menu-panel .mclose{position:absolute;top:20px;right:24px;width:40px;height:40px;display:grid;place-items:center;color:var(--ink);font-size:28px;line-height:1}
+.menu-back{position:fixed;inset:0;background:rgba(0,0,0,.4);opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s;z-index:89}
+.menu-back.open{opacity:1;visibility:visible}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 28px;font-family:'Inter';font-size:13px;letter-spacing:.05em;font-weight:500;transition:all .3s ease;cursor:pointer;border-radius:999px;border:1px solid transparent}
+.btn-green{background:var(--green);color:var(--paper);border-color:var(--green)}
+.btn-green:hover{background:var(--green-d);border-color:var(--green-d);transform:translateY(-1px);box-shadow:0 8px 24px rgba(31,77,62,.18)}
+.btn-line{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--paper)}
+.btn-sm{padding:11px 22px;font-size:12px}
+.btn-arrow{display:inline-flex;align-items:center;gap:8px;font-family:'Inter';font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);padding:4px 0;border-bottom:1px solid var(--ink);transition:gap .25s,color .25s,border-color .25s}
+.btn-arrow:hover{gap:14px;color:var(--green);border-color:var(--green)}
+
+/* === PAGE HERO === */
+.phero{padding:48px 0 64px;border-bottom:1px solid var(--line)}
+@media(min-width:768px){.phero{padding:80px 0 96px}}
+.phero-grid{display:grid;grid-template-columns:1fr;gap:32px;align-items:end}
+@media(min-width:900px){.phero-grid{grid-template-columns:7fr 5fr;gap:80px}}
+.phero h1{font-family:'DM Serif Display',serif;font-size:clamp(48px,7vw,96px);line-height:1;letter-spacing:-.015em;color:var(--ink);margin-top:18px}
+.phero h1 .it{font-family:'DM Serif Display',serif;font-style:italic;color:var(--green)}
+.phero-sub{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--ink-2);line-height:1.45;max-width:480px}
+.breadcrumb{font-family:'Inter';font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);font-weight:500;margin-bottom:12px}
+.breadcrumb span{color:var(--green)}
+
+/* === FILTER TABS === */
+.filter-bar{display:flex;flex-wrap:wrap;gap:8px;padding:32px 0;border-bottom:1px solid var(--line)}
+.filter-bar button{padding:10px 18px;border:1px solid var(--line-2);font-family:'Inter';font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);border-radius:999px;font-weight:500;transition:all .25s}
+.filter-bar button:hover{border-color:var(--ink)}
+.filter-bar button.on{background:var(--green);border-color:var(--green);color:var(--paper)}
+
+/* === SERVICE DETAIL === */
+.svc-section{padding:72px 0;border-bottom:1px solid var(--line)}
+@media(min-width:768px){.svc-section{padding:96px 0}}
+.svc-detail{display:grid;grid-template-columns:1fr;gap:48px}
+@media(min-width:900px){.svc-detail{grid-template-columns:5fr 7fr;gap:80px}}
+.svc-num-tag{font-family:'Inter';font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+.svc-detail h2{font-family:'DM Serif Display',serif;font-size:clamp(34px,4.5vw,58px);line-height:1.02;letter-spacing:-.01em;color:var(--ink);margin:14px 0 22px}
+.svc-detail h2 .it{font-style:italic;color:var(--green)}
+.svc-meta{display:flex;flex-wrap:wrap;gap:24px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:28px}
+.svc-meta > div{display:flex;flex-direction:column;gap:4px}
+.svc-meta .k{font-family:'Inter';font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+.svc-meta .v{font-family:'DM Serif Display',serif;font-size:22px;color:var(--ink);line-height:1}
+.svc-meta .v.green{color:var(--green)}
+.svc-lead{font-family:'Cormorant Garamond',serif;font-size:21px;line-height:1.5;color:var(--ink-2);margin-bottom:28px;font-style:italic}
+.includes{margin-bottom:32px}
+.includes h4{font-family:'Inter';font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-3);font-weight:500;margin-bottom:18px}
+.includes ul li{position:relative;padding:14px 0 14px 32px;border-bottom:1px solid var(--line);font-family:'Inter';font-size:15px;color:var(--ink-2);line-height:1.5}
+.includes ul li::before{content:'';position:absolute;left:0;top:21px;width:14px;height:1px;background:var(--green)}
+.includes ul li:last-child{border-bottom:0}
+.svc-side{position:relative}
+.svc-img{aspect-ratio:4/5;background:var(--paper-2);overflow:hidden;position:relative}
+.svc-img img{width:100%;height:100%;object-fit:cover}
+.svc-img-cap{position:absolute;top:20px;left:20px;background:var(--paper);padding:10px 16px;border-radius:999px;font-family:'Inter';font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--green);font-weight:600;display:flex;align-items:center;gap:8px}
+.svc-img-cap::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--green)}
+.svc-cta-row{display:flex;gap:12px;flex-wrap:wrap}
+
+/* === FAQ === */
+.faq-grid{display:grid;grid-template-columns:1fr;gap:0;margin-top:32px}
+.faq-row{border-top:1px solid var(--line);padding:24px 0}
+.faq-row:last-child{border-bottom:1px solid var(--line)}
+.faq-q{display:flex;justify-content:space-between;align-items:center;gap:24px;cursor:pointer;font-family:'DM Serif Display',serif;font-size:clamp(20px,2.3vw,26px);line-height:1.2;color:var(--ink);transition:color .25s}
+.faq-q:hover{color:var(--green)}
+.faq-toggle{font-family:'Inter';font-size:14px;color:var(--green);transition:transform .3s}
+.faq-row.open .faq-toggle{transform:rotate(45deg)}
+.faq-a{font-family:'Cormorant Garamond',serif;font-size:19px;color:var(--ink-2);line-height:1.5;font-style:italic;max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.16,1,.3,1),margin-top .3s,opacity .3s;opacity:0}
+.faq-row.open .faq-a{max-height:300px;margin-top:18px;opacity:1}
+
+/* === CTA BLOCK === */
+.cta-block{padding:96px 0;background:var(--ink);color:var(--paper)}
+@media(min-width:768px){.cta-block{padding:128px 0}}
+.cta-block .eyebrow{color:var(--gold)}
+.cta-block .eyebrow::before{background:var(--gold)}
+.cta-block h2{font-family:'DM Serif Display',serif;font-size:clamp(40px,6vw,80px);line-height:1.02;color:var(--paper);margin:24px 0 18px;max-width:880px}
+.cta-block h2 .it{font-family:'DM Serif Display',serif;font-style:italic;color:var(--gold)}
+.cta-block p{font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.5;color:rgba(250,248,245,.7);max-width:540px;margin-bottom:36px}
+.cta-block .btn-green{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.cta-block .btn-green:hover{background:var(--paper);border-color:var(--paper)}
+.cta-block .btn-line{color:var(--paper);border-color:var(--paper)}
+.cta-block .btn-line:hover{background:var(--paper);color:var(--ink)}
+
+/* === FOOTER === */
+.foot{background:var(--paper);padding:80px 0 32px;border-top:1px solid var(--line)}
+.foot-grid{display:grid;grid-template-columns:1fr;gap:48px}
+@media(min-width:768px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1.5fr}}
+.foot h4{font-family:'Inter';font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-3);font-weight:500;margin-bottom:18px}
+.foot a{display:block;font-family:'Inter';font-size:14px;color:var(--ink-2);padding:6px 0;transition:color .2s}
+.foot a:hover{color:var(--green)}
+.foot p{font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.5;color:var(--ink-2);max-width:340px;margin-top:20px;font-style:italic}
+.foot .big-phone{font-family:'DM Serif Display',serif;font-size:26px;color:var(--ink);letter-spacing:-.01em}
+.foot .copy{display:flex;flex-direction:column;gap:8px;margin-top:48px;padding-top:24px;border-top:1px solid var(--line);font-family:'Inter';font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+@media(min-width:768px){.foot .copy{flex-direction:row;justify-content:space-between;align-items:center}}
+
+/* === MOBILE STICKY === */
+.mob-cta{position:fixed;bottom:0;left:0;right:0;background:var(--paper);border-top:1px solid var(--line);padding:12px;display:flex;gap:10px;z-index:55;box-shadow:0 -8px 24px rgba(0,0,0,.06)}
+.mob-cta a{flex:1;padding:14px;text-align:center;font-family:'Inter';font-size:12px;letter-spacing:.12em;font-weight:500;border-radius:999px}
+@media(min-width:960px){.mob-cta{display:none}}
+
+/* === MODAL === */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.5);backdrop-filter:blur(6px);z-index:200;display:none;align-items:center;justify-content:center;padding:24px}
+.modal.open{display:flex}
+.modal-card{background:var(--paper);max-width:520px;width:100%;padding:40px 32px;position:relative;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.18)}
+@media(min-width:600px){.modal-card{padding:48px 44px}}
+.modal-x{position:absolute;top:16px;right:20px;color:var(--ink-3);font-size:28px;line-height:1;transition:color .2s,transform .25s}
+.modal-x:hover{color:var(--green);transform:rotate(90deg)}
+.modal h3{font-family:'DM Serif Display',serif;font-size:36px;line-height:1.05;color:var(--ink);margin:14px 0 10px}
+.modal h3 .it{font-family:'DM Serif Display',serif;font-style:italic;color:var(--green)}
+.modal > .modal-card > p{font-family:'Cormorant Garamond',serif;font-size:19px;font-style:italic;color:var(--ink-2);margin-bottom:24px;line-height:1.4}
+.modal-services{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
+.modal-service{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;background:var(--paper-2);border:1px solid transparent;transition:border-color .25s,background .25s;cursor:pointer}
+.modal-service:hover{border-color:var(--green);background:var(--paper)}
+.modal-service.selected{border-color:var(--green);background:rgba(31,77,62,.05)}
+.modal-service .ms-name{font-family:'DM Serif Display',serif;font-size:18px;color:var(--ink)}
+.modal-service .ms-time{font-family:'Inter';font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+.field-label{font-family:'Inter';font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px;display:block;font-weight:500}
+.field-label .req{color:var(--green)}
+.input{width:100%;background:var(--paper);border:1px solid var(--line-2);padding:13px 16px;color:var(--ink);font-family:'Inter';font-size:14px;outline:none;transition:border-color .25s;font-weight:400}
+.input:focus{border-color:var(--green)}
+.input::placeholder{color:var(--ink-3)}
+.form-row{margin-bottom:16px}
+.form-row.col2{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:520px){.form-row.col2{grid-template-columns:1fr 1fr}}
+
+/* === REVEAL === */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:translateY(0)}
+.stagger > *{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+.stagger.in > *{opacity:1;transform:translateY(0)}
+.stagger.in > *:nth-child(1){transition-delay:0s}
+.stagger.in > *:nth-child(2){transition-delay:.1s}
+.stagger.in > *:nth-child(3){transition-delay:.2s}
+.stagger.in > *:nth-child(4){transition-delay:.3s}
+
+@media(max-width:768px){
+  body{font-size:15px;padding-bottom:64px}
+  .topbar{font-size:11px}
+  .topbar .row{padding:8px 20px;gap:10px}
+  .topbar .left{gap:14px}
+  .header .row{padding:16px 20px}
+  .wrap{padding:0 20px}
+  .phero{padding:36px 0 52px}
+  .phero h1{font-size:44px}
+  .phero-sub{font-size:18px}
+  .filter-bar{padding:24px 0;gap:6px}
+  .filter-bar button{padding:8px 14px;font-size:11px}
+  .svc-section{padding:48px 0}
+  .svc-detail h2{font-size:30px}
+  .svc-meta{gap:16px}
+  .svc-meta .v{font-size:18px}
+  .includes ul li{font-size:14px;padding:12px 0 12px 28px}
+  .faq-q{font-size:20px;gap:12px}
+  .faq-a{font-size:17px}
+  .cta-block{padding:64px 0}
+  .cta-block h2{font-size:40px;margin:18px 0 14px}
+  .cta-block p{font-size:18px;margin-bottom:24px}
+  .foot{padding:56px 0 28px}
+  .foot-grid{gap:32px}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="row">
+    <div class="left">
+      <span data-en="Mon–Sat · 10:00 AM – 6:00 PM" data-es="Lun–Sáb · 10:00 AM – 6:00 PM">Mon–Sat · 10:00 AM – 6:00 PM</span>
+      <span class="hide-sm">129 Newbridge Rd · Hicksville, NY</span>
+    </div>
+    <div class="right">
+      <a href="tel:+15169311010">(516) 931-1010</a>
+      <div class="lang-toggle">
+        <button data-lang="en" class="active">EN</button>
+        <span style="opacity:.3">·</span>
+        <button data-lang="es">ES</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="row">
+    <a href="index.html" class="logo">
+      <img src="assets/brand/logo.jpg" alt="Hicksville Optical"/>
+      <div class="logo-text">
+        <span class="l1">Hicksville Optical</span>
+        <span class="l2">Est. Hicksville · NY</span>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="services.html" class="active" data-en="Services" data-es="Servicios">Services</a>
+      <a href="eyewear.html" data-en="Eyewear" data-es="Lentes">Eyewear</a>
+      <a href="about.html" data-en="About" data-es="Nosotros">About</a>
+      <a href="contact.html" data-en="Visit" data-es="Visítanos">Visit</a>
+    </nav>
+    <div class="header-cta">
+      <a href="#" data-book class="btn btn-green btn-sm" data-en="Book Exam" data-es="Reservar">Book Exam</a>
+      <button id="menuBtn" class="menu-btn" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="menu-back" id="menuBack"></div>
+<aside class="menu-panel" id="menuPanel">
+  <button class="mclose" id="menuClose" aria-label="Close">×</button>
+  <a href="services.html" data-en="Services" data-es="Servicios">Services</a>
+  <a href="eyewear.html" data-en="Eyewear" data-es="Lentes">Eyewear</a>
+  <a href="about.html" data-en="About" data-es="Nosotros">About</a>
+  <a href="contact.html" data-en="Visit" data-es="Visítanos">Visit</a>
+  <div style="margin-top:auto;padding-top:24px;border-top:1px solid var(--line)">
+    <a href="tel:+15169311010" style="font-family:'DM Serif Display',serif;font-size:22px;color:var(--green)">(516) 931-1010</a>
+    <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--ink-3);margin-top:6px">129 Newbridge Rd<br>Hicksville, NY 11801</p>
+  </div>
+</aside>
+
+<!-- PAGE HERO -->
+<section class="phero">
+  <div class="wrap">
+    <div class="phero-grid">
+      <div class="reveal">
+        <div class="breadcrumb"><a href="index.html">Home</a> / <span data-en="Services" data-es="Servicios">Services</span></div>
+        <div class="eyebrow" data-en="Eye Care · Exams · Fittings" data-es="Cuidado · Exámenes · Adaptaciones">Eye Care · Exams · Fittings</div>
+        <h1><span data-en="Eye care, " data-es="Cuidado ocular, ">Eye care, </span><span class="it" data-en="time taken." data-es="con tiempo.">time taken.</span></h1>
+      </div>
+      <p class="phero-sub reveal" data-en="Ten visit types, all delivered the same way — without the rush, without the upsell, without skipping the small print." data-es="Diez tipos de visita, todas con la misma filosofía — sin prisas, sin ventas forzadas, sin saltarse los detalles.">Ten visit types, all delivered the same way — without the rush, without the upsell, without skipping the small print.</p>
+    </div>
+
+    <div class="filter-bar reveal" id="filterBar">
+      <button class="on" data-filter="all" data-en="All Services" data-es="Todos">All Services</button>
+      <button data-filter="exam" data-en="Eye Exams" data-es="Exámenes">Eye Exams</button>
+      <button data-filter="contact" data-en="Contact Lenses" data-es="Lentes de Contacto">Contact Lenses</button>
+      <button data-filter="specialty" data-en="Specialty Care" data-es="Atención Especial">Specialty Care</button>
+      <button data-filter="kids" data-en="Pediatric" data-es="Pediátrico">Pediatric</button>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 01 — NEW PATIENT EXAM -->
+<section class="svc-section" id="new-patient" data-cat="exam">
+  <div class="wrap">
+    <div class="svc-detail">
+      <div class="reveal">
+        <span class="svc-num-tag">01 · <span data-en="Eye Exam" data-es="Examen">Eye Exam</span></span>
+        <h2><span data-en="New Patient" data-es="Paciente Nuevo">New Patient</span><br><span class="it" data-en="Exam." data-es="Examen.">Exam.</span></h2>
+        <div class="svc-meta">
+          <div><span class="k" data-en="Duration" data-es="Duración">Duration</span><span class="v">60 min</span></div>
+          <div><span class="k" data-en="Investment" data-es="Inversión">Investment</span><span class="v green">$185</span></div>
+          <div><span class="k" data-en="Walk-in" data-es="Sin cita">Walk-in</span><span class="v" data-en="Welcome" data-es="OK">Welcome</span></div>
+        </div>
+        <p class="svc-lead" data-en="A full diagnostic workup — the right starting point for new patients or anyone returning after years away." data-es="Un diagnóstico completo — el punto de partida correcto para pacientes nuevos o quien regresa tras años.">A full diagnostic workup — the right starting point for new patients or anyone returning after years away.</p>
+        <div class="includes">
+          <h4 data-en="What's included" data-es="Qué incluye">What's included</h4>
+          <ul>
+            <li data-en="Full medical & family eye health history" data-es="Historia médica y familiar completa">Full medical & family eye health history</li>
+            <li data-en="Digital retinal imaging (no dilation drops required)" data-es="Imagen retinal digital (sin gotas dilatadoras)">Digital retinal imaging (no dilation drops required)</li>
+            <li data-en="Refraction & prescription update" data-es="Refracción y actualización de receta">Refraction & prescription update</li>
+            <li data-en="Glaucoma & cataract screening" data-es="Detección de glaucoma y catarata">Glaucoma & cataract screening</li>
+            <li data-en="Binocular vision & eye-muscle assessment" data-es="Evaluación de visión binocular y músculos oculares">Binocular vision & eye-muscle assessment</li>
+            <li data-en="Personalized eyewear consultation" data-es="Consulta personalizada de armazones">Personalized eyewear consultation</li>
+          </ul>
+        </div>
+        <div class="svc-cta-row">
+          <a href="#" data-book class="btn btn-green" data-en="Book this exam" data-es="Reservar examen">Book this exam <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+          <a href="tel:+15169311010" class="btn btn-line" data-en="Call to ask" data-es="Llamar">Call to ask</a>
+        </div>
+      </div>
+      <div class="svc-side reveal">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1582142306909-195724d33ffc?auto=format&fit=crop&w=900&q=85" alt="Examination chair"/>
+          <span class="svc-img-cap" data-en="In-office" data-es="En consulta">In-office</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 02 — EXISTING PATIENT -->
+<section class="svc-section" id="existing-patient" data-cat="exam">
+  <div class="wrap">
+    <div class="svc-detail">
+      <div class="svc-side reveal">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=85" alt="Phoropter"/>
+          <span class="svc-img-cap" data-en="Annual" data-es="Anual">Annual</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <span class="svc-num-tag">02 · <span data-en="Eye Exam" data-es="Examen">Eye Exam</span></span>
+        <h2><span data-en="Existing Patient" data-es="Paciente">Existing Patient</span><br><span class="it" data-en="Annual Check." data-es="Anual.">Annual Check.</span></h2>
+        <div class="svc-meta">
+          <div><span class="k" data-en="Duration" data-es="Duración">Duration</span><span class="v">30 min</span></div>
+          <div><span class="k" data-en="Investment" data-es="Inversión">Investment</span><span class="v green">$125</span></div>
+          <div><span class="k" data-en="Frequency" data-es="Frecuencia">Frequency</span><span class="v" data-en="Yearly" data-es="Anual">Yearly</span></div>
+        </div>
+        <p class="svc-lead" data-en="Your annual update with the practice — prescription verified, eye health rechecked, lens recommendations reviewed." data-es="Tu actualización anual con el consultorio — receta verificada, salud ocular revisada, recomendaciones de lentes evaluadas.">Your annual update with the practice — prescription verified, eye health rechecked, lens recommendations reviewed.</p>
+        <div class="includes">
+          <h4 data-en="What's included" data-es="Qué incluye">What's included</h4>
+          <ul>
+            <li data-en="Refraction & prescription verification" data-es="Refracción y verificación de receta">Refraction & prescription verification</li>
+            <li data-en="Eye health & retinal recheck" data-es="Salud ocular y revisión retinal">Eye health & retinal recheck</li>
+            <li data-en="Contact lens prescription review (if applicable)" data-es="Revisión de receta de lentes de contacto (si aplica)">Contact lens prescription review (if applicable)</li>
+            <li data-en="Frame & lens consultation if you're due for new eyewear" data-es="Consulta de armazones y lentes si te toca renovar">Frame & lens consultation if you're due for new eyewear</li>
+          </ul>
+        </div>
+        <div class="svc-cta-row">
+          <a href="#" data-book class="btn btn-green" data-en="Book this exam" data-es="Reservar examen">Book this exam</a>
+          <a href="tel:+15169311010" class="btn btn-line">Call</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 03 — CONTACT LENS INITIAL -->
+<section class="svc-section" id="contact-initial" data-cat="contact">
+  <div class="wrap">
+    <div class="svc-detail">
+      <div class="reveal">
+        <span class="svc-num-tag">03 · <span data-en="Contact Lens" data-es="Lentes">Contact Lens</span></span>
+        <h2><span data-en="Initial Lens" data-es="Adaptación">Initial Lens</span><br><span class="it" data-en="Fitting." data-es="Inicial.">Fitting.</span></h2>
+        <div class="svc-meta">
+          <div><span class="k" data-en="Duration" data-es="Duración">Duration</span><span class="v">45 min</span></div>
+          <div><span class="k" data-en="Investment" data-es="Inversión">Investment</span><span class="v green">$165</span></div>
+          <div><span class="k" data-en="Trial pair" data-es="Par de prueba">Trial pair</span><span class="v" data-en="Included" data-es="Incluido">Included</span></div>
+        </div>
+        <p class="svc-lead" data-en="First-time wearers and switchers — fit, comfort, and training all handled in one unhurried visit." data-es="Primera vez o cambio de marca — adaptación, confort y capacitación en una sola visita sin prisas.">First-time wearers and switchers — fit, comfort, and training all handled in one unhurried visit.</p>
+        <div class="includes">
+          <h4 data-en="What's included" data-es="Qué incluye">What's included</h4>
+          <ul>
+            <li data-en="Corneal measurements & tear film evaluation" data-es="Medición corneal y evaluación de película lagrimal">Corneal measurements & tear film evaluation</li>
+            <li data-en="Lens type recommendation (soft, toric, multifocal, RGP)" data-es="Recomendación de tipo de lente (blando, tórico, multifocal, RGP)">Lens type recommendation (soft, toric, multifocal, RGP)</li>
+            <li data-en="Trial pair sized to your eyes" data-es="Par de prueba a la medida">Trial pair sized to your eyes</li>
+            <li data-en="Insertion, removal & hygiene training" data-es="Capacitación de colocación, retiro e higiene">Insertion, removal & hygiene training</li>
+            <li data-en="Follow-up appointment scheduled" data-es="Cita de seguimiento agendada">Follow-up appointment scheduled</li>
+          </ul>
+        </div>
+        <div class="svc-cta-row">
+          <a href="#" data-book class="btn btn-green" data-en="Book fitting" data-es="Reservar adaptación">Book fitting</a>
+          <a href="tel:+15169311010" class="btn btn-line">Call</a>
+        </div>
+      </div>
+      <div class="svc-side reveal">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1606166325683-e6deb697d301?auto=format&fit=crop&w=900&q=85" alt="Contact lens"/>
+          <span class="svc-img-cap" data-en="Custom fit" data-es="A medida">Custom fit</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 04 — CONTACT LENS FOLLOWUP -->
+<section class="svc-section" id="contact-followup" data-cat="contact">
+  <div class="wrap">
+    <div class="svc-detail">
+      <div class="svc-side reveal">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1583944034408-3edd4f0f5dde?auto=format&fit=crop&w=900&q=85" alt="Lens follow up"/>
+          <span class="svc-img-cap" data-en="Follow-up" data-es="Seguimiento">Follow-up</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <span class="svc-num-tag">04 · <span data-en="Contact Lens" data-es="Lentes">Contact Lens</span></span>
+        <h2><span data-en="Lens" data-es="Seguimiento">Lens</span> <span class="it" data-en="Follow-Up." data-es="de Lentes.">Follow-Up.</span></h2>
+        <div class="svc-meta">
+          <div><span class="k" data-en="Duration" data-es="Duración">Duration</span><span class="v">30 min</span></div>
+          <div><span class="k" data-en="Investment" data-es="Inversión">Investment</span><span class="v green">$85</span></div>
+          <div><span class="k" data-en="Bundled" data-es="Incluido">Bundled</span><span class="v" data-en="With fitting" data-es="Con adaptación">With fitting</span></div>
+        </div>
+        <p class="svc-lead" data-en="The visit that catches the small problems early — slight irritation, mid-day dryness, fit drift after a few weeks." data-es="La visita que detecta los pequeños problemas a tiempo — irritación leve, sequedad de medio día, deriva de ajuste.">The visit that catches the small problems early — slight irritation, mid-day dryness, fit drift after a few weeks.</p>
+        <div class="includes">
+          <h4 data-en="What's included" data-es="Qué incluye">What's included</h4>
+          <ul>
+            <li data-en="Comfort & wear-time check" data-es="Revisión de confort y tiempo de uso">Comfort & wear-time check</li>
+            <li data-en="Visual acuity verification with lenses in" data-es="Verificación de agudeza visual con lentes puestos">Visual acuity verification with lenses in</li>
+            <li data-en="Fit assessment & curvature adjustment" data-es="Evaluación de ajuste y ajuste de curvatura">Fit assessment & curvature adjustment</li>
+            <li data-en="Annual supply order if approved" data-es="Pedido de suministro anual si aprobado">Annual supply order if approved</li>
+          </ul>
+        </div>
+        <div class="svc-cta-row">
+          <a href="#" data-book class="btn btn-green" data-en="Book follow-up" data-es="Reservar seguimiento">Book follow-up</a>
+          <a href="tel:+15169311010" class="btn btn-line">Call</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 05 — OTHER -->
+<section class="svc-section" id="other" data-cat="specialty">
+  <div class="wrap">
+    <div class="svc-detail">
+      <div class="reveal">
+        <span class="svc-num-tag">05 · <span data-en="Specialty" data-es="Especial">Specialty</span></span>
+        <h2><span data-en="Other" data-es="Otras">Other</span><br><span class="it" data-en="Concerns." data-es="Consultas.">Concerns.</span></h2>
+        <div class="svc-meta">
+          <div><span class="k" data-en="Duration" data-es="Duración">Duration</span><span class="v">30 min</span></div>
+          <div><span class="k" data-en="Same-day" data-es="Mismo día">Same-day</span><span class="v green" data-en="Available" data-es="Disponible">Available</span></div>
+          <div><span class="k" data-en="Investment" data-es="Inversión">Investment</span><span class="v">$95+</span></div>
+        </div>
+        <p class="svc-lead" data-en="When something feels off — and you'd rather not wait. Walk-ins triaged on the day." data-es="Cuando algo no se siente bien — y prefieres no esperar. Atendemos walk-ins el mismo día.">When something feels off — and you'd rather not wait. Walk-ins triaged on the day.</p>
+        <div class="includes">
+          <h4 data-en="Common reasons to come in" data-es="Razones comunes para venir">Common reasons to come in</h4>
+          <ul>
+            <li data-en="Red eye, irritation, or persistent itching" data-es="Ojo rojo, irritación o picor persistente">Red eye, irritation, or persistent itching</li>
+            <li data-en="Foreign body sensation — eyelash, dust, debris" data-es="Sensación de cuerpo extraño — pestaña, polvo, restos">Foreign body sensation — eyelash, dust, debris</li>
+            <li data-en="Sudden visual change, floaters, or flashes" data-es="Cambio visual súbito, moscas volantes o destellos">Sudden visual change, floaters, or flashes</li>
+            <li data-en="Frame adjustment, fit correction, repair" data-es="Ajuste de armazón, corrección, reparación">Frame adjustment, fit correction, repair</li>
+            <li data-en="Lost lens, broken lens, prescription replacement" data-es="Lente perdido, lente roto, reposición de receta">Lost lens, broken lens, prescription replacement</li>
+          </ul>
+        </div>
+        <div class="svc-cta-row">
+          <a href="#" data-book class="btn btn-green" data-en="Book a visit" data-es="Reservar visita">Book a visit</a>
+          <a href="tel:+15169311010" class="btn btn-line" data-en="Call now" data-es="Llamar">Call now</a>
+        </div>
+      </div>
+      <div class="svc-side reveal">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1614935151651-0bea6508db6b?auto=format&fit=crop&w=900&q=85" alt="Eye care"/>
+          <span class="svc-img-cap" data-en="Same-day" data-es="Mismo día">Same-day</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 06 — PEDIATRIC (MOCK) -->
+<section class="svc-section" id="pediatric" data-cat="kids">
+  <div class="wrap">
+    <div class="svc-detail">
+      <div class="svc-side reveal">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1588532002802-ecdcd9c33f4f?auto=format&fit=crop&w=900&q=85" alt="Pediatric care"/>
+          <span class="svc-img-cap" data-en="Ages 5–17" data-es="5–17 años">Ages 5–17</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <span class="svc-num-tag">06 · <span data-en="Pediatric" data-es="Pediátrico">Pediatric</span></span>
+        <h2><span data-en="Pediatric" data-es="Examen">Pediatric</span><br><span class="it" data-en="Eye Care." data-es="Pediátrico.">Eye Care.</span></h2>
+        <div class="svc-meta">
+          <div><span class="k" data-en="Duration" data-es="Duración">Duration</span><span class="v">40 min</span></div>
+          <div><span class="k" data-en="Ages" data-es="Edades">Ages</span><span class="v">5–17</span></div>
+          <div><span class="k" data-en="Investment" data-es="Inversión">Investment</span><span class="v green">$135</span></div>
+        </div>
+        <p class="svc-lead" data-en="Age-appropriate vision testing, learning-related vision screening, and a frame collection sized for younger faces." data-es="Pruebas visuales según edad, screening para aprendizaje, y armazones a la medida de caras jóvenes.">Age-appropriate vision testing, learning-related vision screening, and a frame collection sized for younger faces.</p>
+        <div class="includes">
+          <h4 data-en="What's included" data-es="Qué incluye">What's included</h4>
+          <ul>
+            <li data-en="Visual acuity & reading distance evaluation" data-es="Agudeza visual y evaluación de distancia de lectura">Visual acuity & reading distance evaluation</li>
+            <li data-en="Eye-teaming, tracking & focusing tests" data-es="Pruebas de coordinación, seguimiento y enfoque">Eye-teaming, tracking & focusing tests</li>
+            <li data-en="Screen-time & near-work consultation" data-es="Consulta de tiempo en pantalla y trabajo cercano">Screen-time & near-work consultation</li>
+            <li data-en="Junior frame collection — durable, lightweight, fun" data-es="Colección juvenil — duradera, ligera, divertida">Junior frame collection — durable, lightweight, fun</li>
+          </ul>
+        </div>
+        <div class="svc-cta-row">
+          <a href="#" data-book class="btn btn-green" data-en="Book pediatric exam" data-es="Reservar pediátrico">Book pediatric exam</a>
+          <a href="tel:+15169311010" class="btn btn-line">Call</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 07 — DRY EYE (MOCK) -->
+<section class="svc-section" id="dry-eye" data-cat="specialty">
+  <div class="wrap">
+    <div class="svc-detail">
+      <div class="reveal">
+        <span class="svc-num-tag">07 · <span data-en="Specialty" data-es="Especial">Specialty</span></span>
+        <h2><span data-en="Dry Eye" data-es="Terapia">Dry Eye</span><br><span class="it" data-en="Therapy." data-es="de Ojo Seco.">Therapy.</span></h2>
+        <div class="svc-meta">
+          <div><span class="k" data-en="Duration" data-es="Duración">Duration</span><span class="v">45 min</span></div>
+          <div><span class="k" data-en="Investment" data-es="Inversión">Investment</span><span class="v green">$185</span></div>
+          <div><span class="k" data-en="Plan" data-es="Plan">Plan</span><span class="v" data-en="Custom" data-es="A medida">Custom</span></div>
+        </div>
+        <p class="svc-lead" data-en="Burning, blurry-by-afternoon eyes are not 'just getting older.' We run the workup, then build a plan you can stick to." data-es="Ardor o visión borrosa por la tarde no es 'envejecer'. Hacemos el diagnóstico y construimos un plan que puedas seguir.">Burning, blurry-by-afternoon eyes are not 'just getting older.' We run the workup, then build a plan you can stick to.</p>
+        <div class="includes">
+          <h4 data-en="What's included" data-es="Qué incluye">What's included</h4>
+          <ul>
+            <li data-en="Tear-film stability & meibomian gland evaluation" data-es="Estabilidad de película lagrimal y glándulas de Meibomio">Tear-film stability & meibomian gland evaluation</li>
+            <li data-en="Inflammation & ocular surface staining" data-es="Inflamación y tinción de superficie ocular">Inflammation & ocular surface staining</li>
+            <li data-en="Home-care plan & prescription if indicated" data-es="Plan de cuidado en casa y receta si aplica">Home-care plan & prescription if indicated</li>
+            <li data-en="6-week recheck included" data-es="Reevaluación a 6 semanas incluida">6-week recheck included</li>
+          </ul>
+        </div>
+        <div class="svc-cta-row">
+          <a href="#" data-book class="btn btn-green" data-en="Book consult" data-es="Reservar consulta">Book consult</a>
+          <a href="tel:+15169311010" class="btn btn-line">Call</a>
+        </div>
+      </div>
+      <div class="svc-side reveal">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1543352634-99a5d50ae78e?auto=format&fit=crop&w=900&q=85" alt="Dry eye"/>
+          <span class="svc-img-cap" data-en="In-office" data-es="En consulta">In-office</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 08 — DIABETIC (MOCK) -->
+<section class="svc-section" id="diabetic" data-cat="specialty">
+  <div class="wrap">
+    <div class="svc-detail">
+      <div class="svc-side reveal">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1559757175-7cb036e0d465?auto=format&fit=crop&w=900&q=85" alt="Diabetic exam"/>
+          <span class="svc-img-cap" data-en="Reports to MD" data-es="Reporte al MD">Reports to MD</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <span class="svc-num-tag">08 · <span data-en="Specialty" data-es="Especial">Specialty</span></span>
+        <h2><span data-en="Diabetic" data-es="Examen">Diabetic</span><br><span class="it" data-en="Eye Exam." data-es="Diabético.">Eye Exam.</span></h2>
+        <div class="svc-meta">
+          <div><span class="k" data-en="Duration" data-es="Duración">Duration</span><span class="v">45 min</span></div>
+          <div><span class="k" data-en="Imaging" data-es="Imagen">Imaging</span><span class="v">OCT + Retinal</span></div>
+          <div><span class="k" data-en="Investment" data-es="Inversión">Investment</span><span class="v green" data-en="Insurance covered" data-es="Cubre seguro">Insurance covered</span></div>
+        </div>
+        <p class="svc-lead" data-en="The annual exam your endocrinologist asks about — full retinal imaging, written report sent to your medical team." data-es="El examen anual que tu endocrinólogo pregunta — imagen retinal completa, reporte escrito a tu equipo médico.">The annual exam your endocrinologist asks about — full retinal imaging, written report sent to your medical team.</p>
+        <div class="includes">
+          <h4 data-en="What's included" data-es="Qué incluye">What's included</h4>
+          <ul>
+            <li data-en="Dilated retinal evaluation" data-es="Evaluación retinal dilatada">Dilated retinal evaluation</li>
+            <li data-en="OCT imaging of the macula" data-es="Imagen OCT de la mácula">OCT imaging of the macula</li>
+            <li data-en="Diabetic retinopathy & macular edema screening" data-es="Detección de retinopatía diabética y edema macular">Diabetic retinopathy & macular edema screening</li>
+            <li data-en="Written report sent to your physician" data-es="Reporte escrito a tu médico">Written report sent to your physician</li>
+          </ul>
+        </div>
+        <div class="svc-cta-row">
+          <a href="#" data-book class="btn btn-green" data-en="Book diabetic exam" data-es="Reservar examen">Book diabetic exam</a>
+          <a href="tel:+15169311010" class="btn btn-line">Call</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 09 — LASIK CONSULT (MOCK) -->
+<section class="svc-section" id="lasik" data-cat="specialty">
+  <div class="wrap">
+    <div class="svc-detail">
+      <div class="reveal">
+        <span class="svc-num-tag">09 · <span data-en="Consultation" data-es="Consulta">Consultation</span></span>
+        <h2><span data-en="LASIK" data-es="Consulta">LASIK</span><br><span class="it" data-en="Consultation." data-es="LASIK.">Consultation.</span></h2>
+        <div class="svc-meta">
+          <div><span class="k" data-en="Duration" data-es="Duración">Duration</span><span class="v">30 min</span></div>
+          <div><span class="k" data-en="Investment" data-es="Inversión">Investment</span><span class="v green" data-en="Complimentary" data-es="Sin costo">Complimentary</span></div>
+          <div><span class="k" data-en="Surgeon referral" data-es="Referencia">Surgeon referral</span><span class="v" data-en="Included" data-es="Incluida">Included</span></div>
+        </div>
+        <p class="svc-lead" data-en="Curious about laser correction? We screen for candidacy, explain the trade-offs honestly, and refer to surgeons we trust." data-es="¿Pensando en corrección láser? Evaluamos candidatura, explicamos los pros y contras honestamente, y referimos a cirujanos confiables.">Curious about laser correction? We screen for candidacy, explain the trade-offs honestly, and refer to surgeons we trust.</p>
+        <div class="includes">
+          <h4 data-en="What's included" data-es="Qué incluye">What's included</h4>
+          <ul>
+            <li data-en="Corneal thickness & topography (mock)" data-es="Espesor y topografía corneal">Corneal thickness & topography</li>
+            <li data-en="Prescription stability review" data-es="Revisión de estabilidad de receta">Prescription stability review</li>
+            <li data-en="Honest candidacy conversation" data-es="Conversación honesta sobre candidatura">Honest candidacy conversation</li>
+            <li data-en="Trusted surgeon referral & co-management" data-es="Referencia a cirujano y co-manejo">Trusted surgeon referral & co-management</li>
+          </ul>
+        </div>
+        <div class="svc-cta-row">
+          <a href="#" data-book class="btn btn-green" data-en="Book consult" data-es="Reservar consulta">Book consult</a>
+          <a href="tel:+15169311010" class="btn btn-line">Call</a>
+        </div>
+      </div>
+      <div class="svc-side reveal">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1574870111867-089730e5a72b?auto=format&fit=crop&w=900&q=85" alt="LASIK consult"/>
+          <span class="svc-img-cap" data-en="Free consult" data-es="Consulta gratis">Free consult</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 10 — EMERGENCY (MOCK) -->
+<section class="svc-section" id="emergency" data-cat="specialty">
+  <div class="wrap">
+    <div class="svc-detail">
+      <div class="svc-side reveal">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=900&q=85" alt="Emergency"/>
+          <span class="svc-img-cap" data-en="Walk-in" data-es="Sin cita">Walk-in</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <span class="svc-num-tag">10 · <span data-en="Urgent" data-es="Urgente">Urgent</span></span>
+        <h2><span data-en="Emergency" data-es="Atención">Emergency</span><br><span class="it" data-en="Eye Care." data-es="de Urgencia.">Eye Care.</span></h2>
+        <div class="svc-meta">
+          <div><span class="k" data-en="Same-day" data-es="Mismo día">Same-day</span><span class="v green" data-en="Yes" data-es="Sí">Yes</span></div>
+          <div><span class="k" data-en="Walk-in" data-es="Sin cita">Walk-in</span><span class="v" data-en="Welcome" data-es="Bienvenido">Welcome</span></div>
+          <div><span class="k" data-en="After hours" data-es="Fuera de horario">After hours</span><span class="v">Call</span></div>
+        </div>
+        <p class="svc-lead" data-en="Sudden pain, vision loss, chemical exposure, or trauma — call before you arrive so we can clear the chair for you." data-es="Dolor súbito, pérdida visual, exposición química o trauma — llama antes de venir para dejar la silla lista.">Sudden pain, vision loss, chemical exposure, or trauma — call before you arrive so we can clear the chair for you.</p>
+        <div class="includes">
+          <h4 data-en="We handle" data-es="Atendemos">We handle</h4>
+          <ul>
+            <li data-en="Foreign body removal" data-es="Extracción de cuerpos extraños">Foreign body removal</li>
+            <li data-en="Corneal abrasions & infections" data-es="Abrasiones e infecciones corneales">Corneal abrasions & infections</li>
+            <li data-en="Sudden vision loss evaluation" data-es="Evaluación de pérdida visual súbita">Sudden vision loss evaluation</li>
+            <li data-en="Emergency referral to surgeon or hospital if needed" data-es="Referencia urgente a cirujano u hospital si aplica">Emergency referral to surgeon or hospital if needed</li>
+          </ul>
+        </div>
+        <div class="svc-cta-row">
+          <a href="tel:+15169311010" class="btn btn-green" data-en="Call (516) 931-1010" data-es="Llamar (516) 931-1010">Call (516) 931-1010</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="svc-section">
+  <div class="wrap">
+    <div class="reveal" style="max-width:680px;margin-bottom:48px">
+      <div class="eyebrow">FAQ</div>
+      <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(36px,5vw,64px);line-height:1;letter-spacing:-.01em;color:var(--ink);margin-top:18px"><span data-en="Quick" data-es="Respuestas">Quick</span> <span style="font-style:italic;color:var(--green)" data-en="answers." data-es="rápidas.">answers.</span></h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-row">
+        <div class="faq-q"><span data-en="Do you accept walk-ins?" data-es="¿Aceptan sin cita?">Do you accept walk-ins?</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a" data-en="Yes — when the schedule allows. Call ahead (516) 931-1010 and we'll tell you the wait. For anything urgent (sudden pain, vision loss, chemical exposure) come in and we'll fit you in." data-es="Sí — cuando la agenda lo permite. Llama antes (516) 931-1010 y te decimos la espera. Para urgencias (dolor súbito, pérdida visual, exposición química) ven y te atendemos.">Yes — when the schedule allows. Call ahead (516) 931-1010 and we'll tell you the wait.</div>
+      </div>
+      <div class="faq-row">
+        <div class="faq-q"><span data-en="Which insurance plans do you take?" data-es="¿Qué seguros aceptan?">Which insurance plans do you take?</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a" data-en="VSP, EyeMed, Davis Vision, Spectera, Aetna, and most major medical carriers. Bring your card to the desk — we verify benefits on the spot." data-es="VSP, EyeMed, Davis Vision, Spectera, Aetna, y la mayoría de seguros médicos. Trae tu tarjeta a recepción — verificamos al momento.">VSP, EyeMed, Davis Vision, Spectera, Aetna, and most major medical carriers.</div>
+      </div>
+      <div class="faq-row">
+        <div class="faq-q"><span data-en="How long does an eye exam take?" data-es="¿Cuánto dura un examen?">How long does an eye exam take?</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a" data-en="New patients: 60 minutes. Annual checks: 30 minutes. Contact lens fittings: 45 minutes. We don't double-book — your time is yours." data-es="Pacientes nuevos: 60 minutos. Revisión anual: 30 minutos. Adaptación de lentes: 45 minutos. No doble-reservamos — tu tiempo es tuyo.">New patients: 60 minutes. Annual checks: 30 minutes. Contact lens fittings: 45 minutes.</div>
+      </div>
+      <div class="faq-row">
+        <div class="faq-q"><span data-en="Can I buy frames without an exam?" data-es="¿Puedo comprar armazones sin examen?">Can I buy frames without an exam?</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a" data-en="Absolutely. Bring a valid prescription (under 2 years old) and a copy of your pupillary distance. Or we can pull both from a recent exam at our office." data-es="Por supuesto. Trae una receta vigente (menos de 2 años) y tu distancia pupilar. O las consultamos de un examen reciente en el consultorio.">Absolutely. Bring a valid prescription (under 2 years old) and your pupillary distance.</div>
+      </div>
+      <div class="faq-row">
+        <div class="faq-q"><span data-en="Do you sell contact lenses online?" data-es="¿Venden lentes en línea?">Do you sell contact lenses online?</span><span class="faq-toggle">+</span></div>
+        <div class="faq-a" data-en="We can ship your annual supply directly. Reorder by phone, email, or text — we'll confirm your prescription is current and dispatch within 48 hours." data-es="Enviamos tu suministro anual a domicilio. Reordena por teléfono, email o texto — verificamos receta y despachamos en 48 horas.">We can ship your annual supply directly. Reorder by phone, email, or text.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BLOCK -->
+<section class="cta-block">
+  <div class="wrap reveal">
+    <div class="eyebrow" data-en="Schedule" data-es="Agenda">Schedule</div>
+    <h2><span data-en="Find your time." data-es="Encuentra tu hora.">Find your time.</span><br><span class="it" data-en="We'll do the rest." data-es="Nosotros hacemos el resto.">We'll do the rest.</span></h2>
+    <p data-en="Most appointments confirmed within the hour. Online, by phone, or walk-in — your choice." data-es="La mayoría de citas confirmadas en menos de una hora. Online, por teléfono o sin cita — tú decides.">Most appointments confirmed within the hour.</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <a href="#" data-book class="btn btn-green" data-en="Book Online" data-es="Reservar Online">Book Online <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="tel:+15169311010" class="btn btn-line">Call (516) 931-1010</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html" class="logo">
+          <img src="assets/brand/logo.jpg" alt="Hicksville Optical" style="height:54px"/>
+          <div class="logo-text" style="display:flex">
+            <span class="l1">Hicksville Optical</span>
+            <span class="l2">Inc. · Newbridge Rd.</span>
+          </div>
+        </a>
+        <p data-en="A neighborhood optical practice on Long Island. Clear vision, considered design, time taken." data-es="Una óptica de barrio en Long Island. Visión clara, diseño cuidado, tiempo dedicado.">A neighborhood optical practice on Long Island.</p>
+      </div>
+      <div>
+        <h4 data-en="Practice" data-es="Consultorio">Practice</h4>
+        <a href="services.html" data-en="Services" data-es="Servicios">Services</a>
+        <a href="eyewear.html" data-en="Eyewear" data-es="Lentes">Eyewear</a>
+        <a href="about.html" data-en="About" data-es="Nosotros">About</a>
+        <a href="contact.html" data-en="Visit" data-es="Visítanos">Visit</a>
+      </div>
+      <div>
+        <h4 data-en="Visit" data-es="Visítanos">Visit</h4>
+        <p style="margin-top:0;font-style:normal;font-family:Inter;font-size:14px;color:var(--ink-2);line-height:1.6">129 Newbridge Rd<br>Hicksville, NY 11801</p>
+        <a href="https://maps.google.com/?q=129+Newbridge+Rd+Hicksville+NY" target="_blank" style="color:var(--green);font-weight:500;margin-top:10px">Open in Maps →</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+15169311010" class="big-phone">(516) 931-1010</a>
+        <a href="mailto:hicksvilleoptical@gmail.com">hicksvilleoptical@gmail.com</a>
+        <p style="margin-top:8px;font-style:normal;font-family:Inter;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);font-weight:500">Mon–Sat · 10–6</p>
+      </div>
+    </div>
+    <div class="copy">
+      <div>© <span id="year"></span> Hicksville Optical Inc.</div>
+      <div data-en="Most major insurance accepted" data-es="Aceptamos los principales seguros">Most major insurance accepted</div>
+    </div>
+  </div>
+</footer>
+
+<div class="mob-cta">
+  <a href="tel:+15169311010" class="btn btn-line" data-en="Call" data-es="Llamar">Call</a>
+  <a href="#" data-book class="btn btn-green" data-en="Book Exam" data-es="Reservar">Book Exam</a>
+</div>
+
+<!-- BOOKING MODAL -->
+<div id="bookModal" class="modal">
+  <div class="modal-card">
+    <button class="modal-x" data-close>×</button>
+    <div class="eyebrow">Booking</div>
+    <h3><span data-en="Select your" data-es="Selecciona tu">Select your</span> <span class="it" data-en="appointment." data-es="cita.">appointment.</span></h3>
+    <p data-en="Choose the visit type. We'll confirm within the hour." data-es="Elige el tipo de visita. Confirmamos en menos de una hora.">Choose the visit type.</p>
+    <div class="modal-services" id="svcChoices">
+      <div class="modal-service" data-svc="new-patient"><div><div class="ms-name" data-en="New Patient Exam" data-es="Paciente Nuevo">New Patient Exam</div></div><div class="ms-time">60 min</div></div>
+      <div class="modal-service" data-svc="existing-patient"><div><div class="ms-name" data-en="Existing Patient Exam" data-es="Paciente Existente">Existing Patient Exam</div></div><div class="ms-time">30 min</div></div>
+      <div class="modal-service" data-svc="contact-initial"><div><div class="ms-name" data-en="Contact Lens · Initial" data-es="Lentes · Inicial">Contact Lens · Initial</div></div><div class="ms-time">45 min</div></div>
+      <div class="modal-service" data-svc="contact-followup"><div><div class="ms-name" data-en="Contact Lens · Follow Up" data-es="Lentes · Seguimiento">Contact Lens · Follow Up</div></div><div class="ms-time">30 min</div></div>
+      <div class="modal-service" data-svc="other"><div><div class="ms-name" data-en="Other" data-es="Otro">Other</div></div><div class="ms-time">30 min</div></div>
+    </div>
+    <form data-fake>
+      <div class="form-row col2">
+        <div><label class="field-label">Name <span class="req">*</span></label><input class="input" required placeholder="Your name"/></div>
+        <div><label class="field-label">Phone <span class="req">*</span></label><input class="input" type="tel" required placeholder="(516) ..."/></div>
+      </div>
+      <div class="form-row col2">
+        <div><label class="field-label">Email</label><input class="input" type="email" placeholder="you@email.com"/></div>
+        <div><label class="field-label" data-en="Preferred date" data-es="Fecha preferida">Preferred date</label><input class="input" type="date"/></div>
+      </div>
+      <button type="submit" class="btn btn-green" style="width:100%"><span data-en="Request Appointment" data-es="Solicitar Cita">Request Appointment</span></button>
+      <div data-result style="display:none;margin-top:16px;padding:14px;background:rgba(31,77,62,.08);border-left:3px solid var(--green);color:var(--green);font-family:Inter;font-size:13px;font-weight:500">✓ Request received. We'll confirm by phone within the hour.</div>
+    </form>
+  </div>
+</div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+const hdr = document.getElementById('header');
+window.addEventListener('scroll', () => { hdr.classList.toggle('scrolled', window.scrollY > 12); }, {passive: true});
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+document.querySelectorAll('.reveal, .stagger').forEach(el => io.observe(el));
+
+const mb = document.getElementById('menuBtn'), mp = document.getElementById('menuPanel'), mback = document.getElementById('menuBack'), mclose = document.getElementById('menuClose');
+function openMenu(){ mp.classList.add('open'); mback.classList.add('open'); }
+function closeMenu(){ mp.classList.remove('open'); mback.classList.remove('open'); }
+mb && mb.addEventListener('click', openMenu);
+mclose && mclose.addEventListener('click', closeMenu);
+mback && mback.addEventListener('click', closeMenu);
+mp && mp.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+const I18N_KEY = 'hk-lang';
+function applyLang(lang) {
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-en],[data-es]').forEach(el => {
+    const v = el.getAttribute('data-' + lang);
+    if (v != null) el.textContent = v;
+  });
+  document.querySelectorAll('.lang-toggle button').forEach(b => b.classList.toggle('active', b.getAttribute('data-lang') === lang));
+  try { localStorage.setItem(I18N_KEY, lang); } catch(_) {}
+}
+const savedLang = (() => { try { return localStorage.getItem(I18N_KEY); } catch(_) { return null; } })() || 'en';
+applyLang(savedLang);
+document.querySelectorAll('.lang-toggle button[data-lang]').forEach(btn => btn.addEventListener('click', () => applyLang(btn.getAttribute('data-lang'))));
+
+const bm = document.getElementById('bookModal');
+document.querySelectorAll('[data-book]').forEach(el => el.addEventListener('click', (e) => { e.preventDefault(); bm.classList.add('open'); }));
+document.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', () => bm.classList.remove('open')));
+bm && bm.addEventListener('click', (e) => { if (e.target === bm) bm.classList.remove('open'); });
+
+document.querySelectorAll('.modal-service').forEach(s => s.addEventListener('click', () => {
+  document.querySelectorAll('.modal-service').forEach(x => x.classList.remove('selected'));
+  s.classList.add('selected');
+}));
+
+document.querySelectorAll('form[data-fake]').forEach(f => f.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const r = f.querySelector('[data-result]');
+  if (r) r.style.display = 'block';
+  f.reset();
+  document.querySelectorAll('.modal-service').forEach(x => x.classList.remove('selected'));
+}));
+
+// Filter
+document.querySelectorAll('#filterBar button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('#filterBar button').forEach(x => x.classList.remove('on'));
+  b.classList.add('on');
+  const f = b.getAttribute('data-filter');
+  document.querySelectorAll('[data-cat]').forEach(sec => {
+    sec.style.display = (f === 'all' || sec.getAttribute('data-cat') === f) ? '' : 'none';
+  });
+}));
+
+// FAQ
+document.querySelectorAll('.faq-row').forEach(r => {
+  r.querySelector('.faq-q').addEventListener('click', () => r.classList.toggle('open'));
+});
+
+// Smooth scroll to hash on load
+if (window.location.hash) {
+  setTimeout(() => {
+    const el = document.querySelector(window.location.hash);
+    if (el) el.scrollIntoView({behavior:'smooth', block:'start'});
+  }, 300);
+}
+</script>
+
+</body>
+</html>

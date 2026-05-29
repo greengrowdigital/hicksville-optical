@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Eyewear — Hicksville Optical · Designer Frames, Sunglasses & Lenses</title>
+<meta name="description" content="A curated frame collection from independent and heritage houses — at Hicksville Optical in Hicksville, NY." />
+<link rel="canonical" href="https://hicksvilleoptical.com/eyewear" />
+<link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:#faf8f5;color:#1a1a1a;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{font-family:'Inter',system-ui,sans-serif;background:#faf8f5;color:#1a1a1a;overflow-x:hidden;font-weight:400;line-height:1.6;font-size:16px}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;background:none;border:0;color:inherit}
+ul,ol{list-style:none}
+input,select,textarea{font:inherit;color:inherit;background:transparent;border:0;outline:none}
+::selection{background:#1f4d3e;color:#faf8f5}
+:root{--paper:#faf8f5;--paper-2:#f0ece4;--paper-3:#e6e1d5;--ink:#1a1a1a;--ink-2:#3a3a3a;--ink-3:#6e6e6e;--line:#d8d3c5;--line-2:#bdb7a8;--green:#1f4d3e;--green-d:#163d31;--green-l:#2d6b56;--gold:#b6904a}
+.eyebrow{font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--green);font-weight:500;display:inline-flex;align-items:center;gap:14px}
+.eyebrow::before{content:'';display:block;width:32px;height:1px;background:var(--green)}
+.wrap{max-width:1340px;margin:0 auto;padding:0 24px}
+@media(min-width:768px){.wrap{padding:0 48px}}
+.topbar{background:var(--ink);color:var(--paper);font-size:12px;font-weight:500;letter-spacing:.04em}
+.topbar .row{max-width:1340px;margin:0 auto;padding:10px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+@media(min-width:768px){.topbar .row{padding:10px 48px}}
+.topbar .left{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.topbar .right{display:flex;gap:20px;align-items:center}
+.topbar a:hover{opacity:.75}
+.topbar .hide-sm{display:none}
+@media(min-width:600px){.topbar .hide-sm{display:inline}}
+.lang-toggle button{font:inherit;color:var(--paper);opacity:.6;padding:2px 6px;transition:opacity .2s}
+.lang-toggle button.active{opacity:1;border-bottom:1px solid var(--paper)}
+.header{position:sticky;top:0;z-index:60;background:var(--paper);border-bottom:1px solid var(--line);transition:background .3s}
+.header.scrolled{background:rgba(250,248,245,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.header .row{max-width:1340px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+@media(min-width:768px){.header .row{padding:22px 48px}}
+.logo{display:flex;align-items:center;gap:14px}
+.logo img{width:auto;height:46px;object-fit:contain}
+@media(min-width:768px){.logo img{height:54px}}
+.logo-text{display:none;flex-direction:column;line-height:1.1}
+@media(min-width:600px){.logo-text{display:flex}}
+.logo-text .l1{font-family:'DM Serif Display',serif;font-size:18px;letter-spacing:-.01em;color:var(--ink)}
+.logo-text .l2{font-family:'Inter';font-size:9px;letter-spacing:.28em;color:var(--ink-3);text-transform:uppercase;margin-top:4px;font-weight:500}
+.nav{display:none;gap:36px;align-items:center}
+@media(min-width:960px){.nav{display:flex}}
+.nav a{font-family:'Inter';font-size:13px;font-weight:500;letter-spacing:.02em;color:var(--ink);position:relative;padding:8px 0}
+.nav a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--green);transform:scaleX(0);transform-origin:right;transition:transform .4s cubic-bezier(.16,1,.3,1)}
+.nav a:hover::after,.nav a.active::after{transform:scaleX(1);transform-origin:left}
+.nav a.active{color:var(--green)}
+.header-cta{display:flex;align-items:center;gap:12px}
+.menu-btn{display:grid;place-items:center;width:44px;height:44px;color:var(--ink)}
+@media(min-width:960px){.menu-btn{display:none}}
+.menu-panel{position:fixed;top:0;right:0;bottom:0;width:min(360px,86vw);background:var(--paper);border-left:1px solid var(--line);padding:96px 28px 28px;display:flex;flex-direction:column;gap:24px;z-index:90;transform:translateX(100%);transition:transform .45s cubic-bezier(.85,0,.15,1);box-shadow:-20px 0 60px rgba(0,0,0,.06)}
+.menu-panel.open{transform:translateX(0)}
+.menu-panel a{font-family:'DM Serif Display',serif;font-size:32px;color:var(--ink);line-height:1.1}
+.menu-panel a:hover{color:var(--green)}
+.menu-panel .mclose{position:absolute;top:20px;right:24px;width:40px;height:40px;display:grid;place-items:center;color:var(--ink);font-size:28px;line-height:1}
+.menu-back{position:fixed;inset:0;background:rgba(0,0,0,.4);opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s;z-index:89}
+.menu-back.open{opacity:1;visibility:visible}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 28px;font-family:'Inter';font-size:13px;letter-spacing:.05em;font-weight:500;transition:all .3s ease;cursor:pointer;border-radius:999px;border:1px solid transparent}
+.btn-green{background:var(--green);color:var(--paper);border-color:var(--green)}
+.btn-green:hover{background:var(--green-d);border-color:var(--green-d);transform:translateY(-1px);box-shadow:0 8px 24px rgba(31,77,62,.18)}
+.btn-line{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--paper)}
+.btn-sm{padding:11px 22px;font-size:12px}
+.btn-arrow{display:inline-flex;align-items:center;gap:8px;font-family:'Inter';font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);padding:4px 0;border-bottom:1px solid var(--ink);transition:gap .25s,color .25s,border-color .25s}
+.btn-arrow:hover{gap:14px;color:var(--green);border-color:var(--green)}
+
+/* === PAGE HERO === */
+.phero{padding:48px 0 64px;border-bottom:1px solid var(--line)}
+@media(min-width:768px){.phero{padding:80px 0 96px}}
+.phero-grid{display:grid;grid-template-columns:1fr;gap:32px;align-items:end}
+@media(min-width:900px){.phero-grid{grid-template-columns:7fr 5fr;gap:80px}}
+.phero h1{font-family:'DM Serif Display',serif;font-size:clamp(48px,7vw,96px);line-height:1;letter-spacing:-.015em;color:var(--ink);margin-top:18px}
+.phero h1 .it{font-family:'DM Serif Display',serif;font-style:italic;color:var(--green)}
+.phero-sub{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--ink-2);line-height:1.45;max-width:480px}
+.breadcrumb{font-family:'Inter';font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);font-weight:500;margin-bottom:12px}
+.breadcrumb a:hover{color:var(--green)}
+.breadcrumb span{color:var(--green)}
+
+/* === BRAND STRIP === */
+.brand-strip{padding:36px 0;border-bottom:1px solid var(--line);background:var(--paper-2)}
+.brand-strip .row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:24px 56px}
+.brand-strip h3{font-family:'Inter';font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--ink-3);font-weight:500;width:100%;text-align:center;margin-bottom:8px}
+.brand-strip span{font-family:'DM Serif Display',serif;font-size:clamp(18px,2vw,26px);letter-spacing:-.005em;color:var(--ink);opacity:.78;transition:opacity .25s}
+.brand-strip span:hover{opacity:1;color:var(--green)}
+.brand-strip span.it{font-style:italic;color:var(--green);opacity:1}
+
+/* === FILTER BAR === */
+.filter-bar{display:flex;flex-wrap:wrap;gap:8px;padding:32px 0;border-bottom:1px solid var(--line)}
+.filter-bar button{padding:10px 18px;border:1px solid var(--line-2);font-family:'Inter';font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);border-radius:999px;font-weight:500;transition:all .25s}
+.filter-bar button:hover{border-color:var(--ink)}
+.filter-bar button.on{background:var(--green);border-color:var(--green);color:var(--paper)}
+
+/* === FRAME GRID === */
+.frame-section{padding:72px 0}
+@media(min-width:768px){.frame-section{padding:96px 0}}
+.fgrid{display:grid;grid-template-columns:1fr;gap:32px 24px}
+@media(min-width:640px){.fgrid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.fgrid{grid-template-columns:repeat(3,1fr);gap:48px 32px}}
+@media(min-width:1280px){.fgrid{grid-template-columns:repeat(4,1fr)}}
+.fcard{position:relative;overflow:hidden;cursor:pointer}
+.fcard-img{position:relative;aspect-ratio:1/1.05;overflow:hidden;background:var(--paper-2)}
+.fcard-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+.fcard:hover .fcard-img img{transform:scale(1.06)}
+.fcard-tag{position:absolute;top:14px;left:14px;background:var(--paper);padding:6px 12px;font-family:'Inter';font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink);font-weight:600;border-radius:999px}
+.fcard-tag.new{background:var(--green);color:var(--paper)}
+.fcard-tag.sun{background:var(--gold);color:var(--ink)}
+.fcard-meta{padding:20px 4px 0}
+.fcard-brand{font-family:'Inter';font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-3);font-weight:500;margin-bottom:6px}
+.fcard-name{font-family:'DM Serif Display',serif;font-size:22px;line-height:1.1;color:var(--ink)}
+.fcard-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+.fcard-price{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:var(--green)}
+.fcard-action{font-family:'Inter';font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);font-weight:500;transition:color .25s,gap .25s;display:inline-flex;align-items:center;gap:6px}
+.fcard:hover .fcard-action{color:var(--green);gap:12px}
+
+/* === LENS OPTIONS === */
+.lens-band{background:var(--paper-2);padding:96px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.lens-grid{display:grid;grid-template-columns:1fr;gap:24px;margin-top:48px}
+@media(min-width:768px){.lens-grid{grid-template-columns:repeat(3,1fr);gap:32px}}
+.lens-card{background:var(--paper);padding:36px 28px;border:1px solid var(--line);transition:border-color .25s,transform .35s}
+.lens-card:hover{border-color:var(--green);transform:translateY(-3px)}
+.lens-num{font-family:'Inter';font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--green);font-weight:500;margin-bottom:14px}
+.lens-card h3{font-family:'DM Serif Display',serif;font-size:26px;line-height:1.1;color:var(--ink);margin-bottom:12px}
+.lens-card h3 .it{font-style:italic;color:var(--green)}
+.lens-card p{font-family:'Cormorant Garamond',serif;font-size:17px;line-height:1.5;color:var(--ink-2);font-style:italic}
+.lens-card .price{margin-top:18px;padding-top:18px;border-top:1px solid var(--line);font-family:'Inter';font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);font-weight:500;display:flex;justify-content:space-between}
+.lens-card .price strong{font-family:'DM Serif Display',serif;font-size:18px;color:var(--ink);font-weight:400;letter-spacing:-.01em;text-transform:none}
+
+/* === EDITORIAL BAND === */
+.editorial{padding:96px 0}
+.ed-grid{display:grid;grid-template-columns:1fr;gap:48px;align-items:center}
+@media(min-width:1024px){.ed-grid{grid-template-columns:6fr 5fr;gap:80px}}
+.ed-img{aspect-ratio:5/4;overflow:hidden;position:relative;background:var(--paper-2)}
+.ed-img img{width:100%;height:100%;object-fit:cover;filter:contrast(1.02) saturate(.96)}
+.ed-text h2{font-family:'DM Serif Display',serif;font-size:clamp(36px,5vw,64px);line-height:1;letter-spacing:-.01em;color:var(--ink);margin:18px 0 24px}
+.ed-text h2 .it{font-style:italic;color:var(--green)}
+.ed-text p{font-family:'Cormorant Garamond',serif;font-size:20px;line-height:1.55;color:var(--ink-2);margin-bottom:20px}
+.ed-text p:first-of-type::first-letter{font-family:'DM Serif Display',serif;font-size:56px;line-height:.85;float:left;padding:6px 12px 0 0;color:var(--green);font-style:italic}
+
+/* === CTA BLOCK === */
+.cta-block{padding:96px 0;background:var(--ink);color:var(--paper)}
+@media(min-width:768px){.cta-block{padding:128px 0}}
+.cta-block .eyebrow{color:var(--gold)}
+.cta-block .eyebrow::before{background:var(--gold)}
+.cta-block h2{font-family:'DM Serif Display',serif;font-size:clamp(40px,6vw,80px);line-height:1.02;color:var(--paper);margin:24px 0 18px;max-width:880px}
+.cta-block h2 .it{font-style:italic;color:var(--gold)}
+.cta-block p{font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.5;color:rgba(250,248,245,.7);max-width:540px;margin-bottom:36px}
+.cta-block .btn-green{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.cta-block .btn-green:hover{background:var(--paper);border-color:var(--paper)}
+.cta-block .btn-line{color:var(--paper);border-color:var(--paper)}
+.cta-block .btn-line:hover{background:var(--paper);color:var(--ink)}
+
+/* === FOOTER === */
+.foot{background:var(--paper);padding:80px 0 32px;border-top:1px solid var(--line)}
+.foot-grid{display:grid;grid-template-columns:1fr;gap:48px}
+@media(min-width:768px){.foot-grid{grid-template-columns:2fr 1fr 1fr 1.5fr}}
+.foot h4{font-family:'Inter';font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-3);font-weight:500;margin-bottom:18px}
+.foot a{display:block;font-family:'Inter';font-size:14px;color:var(--ink-2);padding:6px 0;transition:color .2s}
+.foot a:hover{color:var(--green)}
+.foot p{font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.5;color:var(--ink-2);max-width:340px;margin-top:20px;font-style:italic}
+.foot .big-phone{font-family:'DM Serif Display',serif;font-size:26px;color:var(--ink);letter-spacing:-.01em}
+.foot .copy{display:flex;flex-direction:column;gap:8px;margin-top:48px;padding-top:24px;border-top:1px solid var(--line);font-family:'Inter';font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+@media(min-width:768px){.foot .copy{flex-direction:row;justify-content:space-between;align-items:center}}
+
+/* === MOBILE STICKY === */
+.mob-cta{position:fixed;bottom:0;left:0;right:0;background:var(--paper);border-top:1px solid var(--line);padding:12px;display:flex;gap:10px;z-index:55;box-shadow:0 -8px 24px rgba(0,0,0,.06)}
+.mob-cta a{flex:1;padding:14px;text-align:center;font-family:'Inter';font-size:12px;letter-spacing:.12em;font-weight:500;border-radius:999px}
+@media(min-width:960px){.mob-cta{display:none}}
+
+/* === MODAL === */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.5);backdrop-filter:blur(6px);z-index:200;display:none;align-items:center;justify-content:center;padding:24px}
+.modal.open{display:flex}
+.modal-card{background:var(--paper);max-width:520px;width:100%;padding:40px 32px;position:relative;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.18);max-height:92vh;overflow-y:auto}
+@media(min-width:600px){.modal-card{padding:48px 44px}}
+.modal-x{position:absolute;top:16px;right:20px;color:var(--ink-3);font-size:28px;line-height:1;transition:color .2s,transform .25s}
+.modal-x:hover{color:var(--green);transform:rotate(90deg)}
+.modal h3{font-family:'DM Serif Display',serif;font-size:32px;line-height:1.05;color:var(--ink);margin:14px 0 10px}
+.modal h3 .it{font-style:italic;color:var(--green)}
+.modal > .modal-card > p{font-family:'Cormorant Garamond',serif;font-size:19px;font-style:italic;color:var(--ink-2);margin-bottom:24px;line-height:1.4}
+.modal-services{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
+.modal-service{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;background:var(--paper-2);border:1px solid transparent;transition:border-color .25s,background .25s;cursor:pointer}
+.modal-service:hover{border-color:var(--green);background:var(--paper)}
+.modal-service.selected{border-color:var(--green);background:rgba(31,77,62,.05)}
+.modal-service .ms-name{font-family:'DM Serif Display',serif;font-size:18px;color:var(--ink)}
+.modal-service .ms-time{font-family:'Inter';font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+.field-label{font-family:'Inter';font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px;display:block;font-weight:500}
+.field-label .req{color:var(--green)}
+.input{width:100%;background:var(--paper);border:1px solid var(--line-2);padding:13px 16px;color:var(--ink);font-family:'Inter';font-size:14px;outline:none;transition:border-color .25s;font-weight:400}
+.input:focus{border-color:var(--green)}
+.input::placeholder{color:var(--ink-3)}
+.form-row{margin-bottom:16px}
+.form-row.col2{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:520px){.form-row.col2{grid-template-columns:1fr 1fr}}
+
+/* === REVEAL === */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:translateY(0)}
+.stagger > *{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+.stagger.in > *{opacity:1;transform:translateY(0)}
+.stagger.in > *:nth-child(1){transition-delay:0s}
+.stagger.in > *:nth-child(2){transition-delay:.06s}
+.stagger.in > *:nth-child(3){transition-delay:.12s}
+.stagger.in > *:nth-child(4){transition-delay:.18s}
+.stagger.in > *:nth-child(5){transition-delay:.24s}
+.stagger.in > *:nth-child(6){transition-delay:.30s}
+.stagger.in > *:nth-child(7){transition-delay:.36s}
+.stagger.in > *:nth-child(8){transition-delay:.42s}
+
+@media(max-width:768px){
+  body{font-size:15px;padding-bottom:64px}
+  .topbar{font-size:11px}
+  .topbar .row{padding:8px 20px;gap:10px}
+  .topbar .left{gap:14px}
+  .header .row{padding:16px 20px}
+  .wrap{padding:0 20px}
+  .phero{padding:36px 0 52px}
+  .phero h1{font-size:44px}
+  .phero-sub{font-size:18px}
+  .brand-strip{padding:28px 0}
+  .brand-strip .row{gap:18px 28px}
+  .brand-strip span{font-size:16px}
+  .filter-bar{padding:24px 0;gap:6px;overflow-x:auto;flex-wrap:nowrap}
+  .filter-bar button{padding:8px 14px;font-size:11px;white-space:nowrap}
+  .frame-section{padding:48px 0}
+  .fcard-name{font-size:18px}
+  .lens-band{padding:64px 0}
+  .lens-grid{gap:18px}
+  .lens-card{padding:28px 22px}
+  .lens-card h3{font-size:22px}
+  .lens-card p{font-size:16px}
+  .editorial{padding:64px 0}
+  .ed-text h2{font-size:32px}
+  .ed-text p{font-size:18px}
+  .cta-block{padding:64px 0}
+  .cta-block h2{font-size:40px;margin:18px 0 14px}
+  .cta-block p{font-size:18px;margin-bottom:24px}
+  .foot{padding:56px 0 28px}
+  .foot-grid{gap:32px}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="row">
+    <div class="left">
+      <span data-en="Mon–Sat · 10:00 AM – 6:00 PM" data-es="Lun–Sáb · 10:00 AM – 6:00 PM">Mon–Sat · 10:00 AM – 6:00 PM</span>
+      <span class="hide-sm">129 Newbridge Rd · Hicksville, NY</span>
+    </div>
+    <div class="right">
+      <a href="tel:+15169311010">(516) 931-1010</a>
+      <div class="lang-toggle">
+        <button data-lang="en" class="active">EN</button>
+        <span style="opacity:.3">·</span>
+        <button data-lang="es">ES</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="row">
+    <a href="index.html" class="logo">
+      <img src="assets/brand/logo.jpg" alt="Hicksville Optical"/>
+      <div class="logo-text">
+        <span class="l1">Hicksville Optical</span>
+        <span class="l2">Est. Hicksville · NY</span>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="services.html" data-en="Services" data-es="Servicios">Services</a>
+      <a href="eyewear.html" class="active" data-en="Eyewear" data-es="Lentes">Eyewear</a>
+      <a href="about.html" data-en="About" data-es="Nosotros">About</a>
+      <a href="contact.html" data-en="Visit" data-es="Visítanos">Visit</a>
+    </nav>
+    <div class="header-cta">
+      <a href="#" data-book class="btn btn-green btn-sm" data-en="Book Exam" data-es="Reservar">Book Exam</a>
+      <button id="menuBtn" class="menu-btn" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="menu-back" id="menuBack"></div>
+<aside class="menu-panel" id="menuPanel">
+  <button class="mclose" id="menuClose" aria-label="Close">×</button>
+  <a href="services.html" data-en="Services" data-es="Servicios">Services</a>
+  <a href="eyewear.html" data-en="Eyewear" data-es="Lentes">Eyewear</a>
+  <a href="about.html" data-en="About" data-es="Nosotros">About</a>
+  <a href="contact.html" data-en="Visit" data-es="Visítanos">Visit</a>
+  <div style="margin-top:auto;padding-top:24px;border-top:1px solid var(--line)">
+    <a href="tel:+15169311010" style="font-family:'DM Serif Display',serif;font-size:22px;color:var(--green)">(516) 931-1010</a>
+    <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--ink-3);margin-top:6px">129 Newbridge Rd<br>Hicksville, NY 11801</p>
+  </div>
+</aside>
+
+<!-- PAGE HERO -->
+<section class="phero">
+  <div class="wrap">
+    <div class="phero-grid">
+      <div class="reveal">
+        <div class="breadcrumb"><a href="index.html">Home</a> / <span data-en="Eyewear" data-es="Lentes">Eyewear</span></div>
+        <div class="eyebrow" data-en="Frames · Sun · Lenses" data-es="Armazones · Sol · Lentes">Frames · Sun · Lenses</div>
+        <h1><span data-en="Forty houses." data-es="Cuarenta casas.">Forty houses.</span><br><span class="it" data-en="One frame at a time." data-es="Una a la vez.">One frame at a time.</span></h1>
+      </div>
+      <p class="phero-sub reveal" data-en="We don't carry brands by the catalogue — we carry frames we'd wear ourselves. The shelf changes when something better shows up." data-es="No traemos marcas por catálogo — traemos armazones que nosotros usaríamos. El estante cambia cuando aparece algo mejor.">We don't carry brands by the catalogue — we carry frames we'd wear ourselves. The shelf changes when something better shows up.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND STRIP -->
+<section class="brand-strip reveal">
+  <div class="wrap">
+    <div class="row">
+      <h3 data-en="House Collection · 40+ brands stocked" data-es="Colección · 40+ marcas">House Collection · 40+ brands stocked</h3>
+      <span>Garrett Leight</span>
+      <span class="it">Moscot</span>
+      <span>Lindberg</span>
+      <span class="it">Persol</span>
+      <span>Oliver Peoples</span>
+      <span class="it">Mr. Leight</span>
+      <span>Tom Ford</span>
+      <span class="it">Cazal</span>
+      <span>Ray-Ban</span>
+    </div>
+  </div>
+</section>
+
+<!-- FILTER BAR -->
+<div class="wrap">
+  <div class="filter-bar reveal" id="filterBar">
+    <button class="on" data-filter="all" data-en="All Frames" data-es="Todos">All Frames</button>
+    <button data-filter="optical" data-en="Optical" data-es="Ópticos">Optical</button>
+    <button data-filter="sun" data-en="Sunglasses" data-es="Sol">Sunglasses</button>
+    <button data-filter="kids" data-en="Junior" data-es="Junior">Junior</button>
+    <button data-filter="sport" data-en="Sport" data-es="Deportivos">Sport</button>
+    <button data-filter="readers" data-en="Readers" data-es="Lectura">Readers</button>
+  </div>
+</div>
+
+<!-- FRAME GRID -->
+<section class="frame-section">
+  <div class="wrap">
+    <div class="fgrid stagger">
+      <a class="fcard" href="#" data-book data-cat="optical">
+        <div class="fcard-img">
+          <span class="fcard-tag new" data-en="New" data-es="Nuevo">New</span>
+          <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=900&q=85" alt="Heritage acetate"/>
+        </div>
+        <div class="fcard-meta">
+          <div class="fcard-brand">Garrett Leight</div>
+          <div class="fcard-name">The Newbridge</div>
+          <div class="fcard-bottom">
+            <span class="fcard-price">from $320</span>
+            <span class="fcard-action" data-en="Try on" data-es="Probar">Try on →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="fcard" href="#" data-book data-cat="optical">
+        <div class="fcard-img">
+          <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=900&q=85" alt="Modern wayfarer"/>
+        </div>
+        <div class="fcard-meta">
+          <div class="fcard-brand">Moscot</div>
+          <div class="fcard-name">The Hicksville</div>
+          <div class="fcard-bottom">
+            <span class="fcard-price">from $260</span>
+            <span class="fcard-action" data-en="Try on" data-es="Probar">Try on →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="fcard" href="#" data-book data-cat="sun">
+        <div class="fcard-img">
+          <span class="fcard-tag sun">Sun</span>
+          <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&w=900&q=85" alt="Summer sun"/>
+        </div>
+        <div class="fcard-meta">
+          <div class="fcard-brand">Persol</div>
+          <div class="fcard-name">The Long Island</div>
+          <div class="fcard-bottom">
+            <span class="fcard-price">from $185</span>
+            <span class="fcard-action" data-en="Try on" data-es="Probar">Try on →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="fcard" href="#" data-book data-cat="optical">
+        <div class="fcard-img">
+          <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&w=900&q=85" alt="Round metal"/>
+        </div>
+        <div class="fcard-meta">
+          <div class="fcard-brand">Oliver Peoples</div>
+          <div class="fcard-name">The Newman</div>
+          <div class="fcard-bottom">
+            <span class="fcard-price">from $385</span>
+            <span class="fcard-action" data-en="Try on" data-es="Probar">Try on →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="fcard" href="#" data-book data-cat="sun">
+        <div class="fcard-img">
+          <span class="fcard-tag sun">Sun</span>
+          <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=85" alt="Aviator"/>
+        </div>
+        <div class="fcard-meta">
+          <div class="fcard-brand">Ray-Ban</div>
+          <div class="fcard-name">The Levittown</div>
+          <div class="fcard-bottom">
+            <span class="fcard-price">from $215</span>
+            <span class="fcard-action" data-en="Try on" data-es="Probar">Try on →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="fcard" href="#" data-book data-cat="optical">
+        <div class="fcard-img">
+          <span class="fcard-tag new" data-en="New" data-es="Nuevo">New</span>
+          <img src="https://images.unsplash.com/photo-1582142306909-195724d33ffc?auto=format&fit=crop&w=900&q=85" alt="Tortoise"/>
+        </div>
+        <div class="fcard-meta">
+          <div class="fcard-brand">Lindberg</div>
+          <div class="fcard-name">The Plainview</div>
+          <div class="fcard-bottom">
+            <span class="fcard-price">from $560</span>
+            <span class="fcard-action" data-en="Try on" data-es="Probar">Try on →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="fcard" href="#" data-book data-cat="kids">
+        <div class="fcard-img">
+          <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&w=900&q=85" alt="Junior frames"/>
+        </div>
+        <div class="fcard-meta">
+          <div class="fcard-brand" data-en="Junior Collection" data-es="Colección Junior">Junior Collection</div>
+          <div class="fcard-name">The Bethpage</div>
+          <div class="fcard-bottom">
+            <span class="fcard-price">from $145</span>
+            <span class="fcard-action" data-en="Try on" data-es="Probar">Try on →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="fcard" href="#" data-book data-cat="sun">
+        <div class="fcard-img">
+          <span class="fcard-tag sun">Sun</span>
+          <img src="https://images.unsplash.com/photo-1556306535-0f09a537f0a3?auto=format&fit=crop&w=900&q=85" alt="Designer sun"/>
+        </div>
+        <div class="fcard-meta">
+          <div class="fcard-brand">Mr. Leight</div>
+          <div class="fcard-name">The Jericho</div>
+          <div class="fcard-bottom">
+            <span class="fcard-price">from $445</span>
+            <span class="fcard-action" data-en="Try on" data-es="Probar">Try on →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="fcard" href="#" data-book data-cat="optical">
+        <div class="fcard-img">
+          <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&w=900&q=85" alt="Acetate"/>
+        </div>
+        <div class="fcard-meta">
+          <div class="fcard-brand">Tom Ford</div>
+          <div class="fcard-name">The Massapequa</div>
+          <div class="fcard-bottom">
+            <span class="fcard-price">from $410</span>
+            <span class="fcard-action" data-en="Try on" data-es="Probar">Try on →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="fcard" href="#" data-book data-cat="sport">
+        <div class="fcard-img">
+          <img src="https://images.unsplash.com/photo-1556306535-38febf6782e7?auto=format&fit=crop&w=900&q=85" alt="Sport frame"/>
+        </div>
+        <div class="fcard-meta">
+          <div class="fcard-brand">Oakley</div>
+          <div class="fcard-name">The Syosset</div>
+          <div class="fcard-bottom">
+            <span class="fcard-price">from $235</span>
+            <span class="fcard-action" data-en="Try on" data-es="Probar">Try on →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="fcard" href="#" data-book data-cat="readers">
+        <div class="fcard-img">
+          <span class="fcard-tag" data-en="Ready-made" data-es="Lectura">Ready-made</span>
+          <img src="https://images.unsplash.com/photo-1577744486770-020ab432da65?auto=format&fit=crop&w=900&q=85" alt="Readers"/>
+        </div>
+        <div class="fcard-meta">
+          <div class="fcard-brand" data-en="House Readers" data-es="Lectura">House Readers</div>
+          <div class="fcard-name">The Eastwood</div>
+          <div class="fcard-bottom">
+            <span class="fcard-price">from $48</span>
+            <span class="fcard-action" data-en="Try on" data-es="Probar">Try on →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="fcard" href="#" data-book data-cat="optical">
+        <div class="fcard-img">
+          <span class="fcard-tag new" data-en="New" data-es="Nuevo">New</span>
+          <img src="https://images.unsplash.com/photo-1606166325683-e6deb697d301?auto=format&fit=crop&w=900&q=85" alt="Browline"/>
+        </div>
+        <div class="fcard-meta">
+          <div class="fcard-brand">Cazal</div>
+          <div class="fcard-name">The Westbury</div>
+          <div class="fcard-bottom">
+            <span class="fcard-price">from $295</span>
+            <span class="fcard-action" data-en="Try on" data-es="Probar">Try on →</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="reveal" style="margin-top:64px;display:flex;justify-content:center">
+      <a href="#" data-book class="btn btn-line" data-en="Book a try-on session" data-es="Reservar sesión de pruebas">Book a try-on session</a>
+    </div>
+  </div>
+</section>
+
+<!-- LENS BAND -->
+<section class="lens-band">
+  <div class="wrap">
+    <div class="reveal" style="max-width:680px">
+      <div class="eyebrow" data-en="Lens Options" data-es="Lentes">Lens Options</div>
+      <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(36px,5vw,64px);line-height:1;letter-spacing:-.01em;color:var(--ink);margin-top:18px"><span data-en="Lenses that match" data-es="Lentes que igualan">Lenses that match</span> <span style="font-style:italic;color:var(--green)" data-en="the frame." data-es="el armazón.">the frame.</span></h2>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--ink-2);margin-top:18px;line-height:1.5">Single-vision, progressive, photochromic, anti-fatigue. Same conversation: what's the use case, what's the trade-off, what's the price.</p>
+    </div>
+    <div class="lens-grid stagger">
+      <div class="lens-card">
+        <div class="lens-num">01</div>
+        <h3><span data-en="Single Vision" data-es="Monofocal">Single Vision</span></h3>
+        <p data-en="Clear lens, anti-reflective coating, UV-blocking. The everyday pair, done correctly." data-es="Lente clara, antirreflejo, bloqueo UV. El par diario, hecho bien.">Clear lens, anti-reflective coating, UV-blocking. The everyday pair, done correctly.</p>
+        <div class="price"><span data-en="Starting at" data-es="Desde">Starting at</span><strong>$95</strong></div>
+      </div>
+      <div class="lens-card">
+        <div class="lens-num">02</div>
+        <h3><span class="it" data-en="Progressive" data-es="Progresivo">Progressive</span></h3>
+        <p data-en="Distance, intermediate, and reading — without the line. Custom-corridor fitting included." data-es="Lejos, intermedio y lectura — sin línea. Adaptación de corredor incluida.">Distance, intermediate, and reading — without the line. Custom-corridor fitting included.</p>
+        <div class="price"><span data-en="Starting at" data-es="Desde">Starting at</span><strong>$285</strong></div>
+      </div>
+      <div class="lens-card">
+        <div class="lens-num">03</div>
+        <h3><span data-en="Photochromic" data-es="Fotocromático">Photochromic</span></h3>
+        <p data-en="Clear indoors, dark outdoors. Transitions® or Drivewear depending on your day." data-es="Clara adentro, oscura afuera. Transitions® o Drivewear según tu día.">Clear indoors, dark outdoors. Transitions® or Drivewear depending on your day.</p>
+        <div class="price"><span data-en="Starting at" data-es="Desde">Starting at</span><strong>$165</strong></div>
+      </div>
+      <div class="lens-card">
+        <div class="lens-num">04</div>
+        <h3><span data-en="Blue-Light" data-es="Anti Luz Azul">Blue-Light</span> <span class="it">Filter</span></h3>
+        <p data-en="For screen-heavy days — clinical-grade filter, not the gimmick coating." data-es="Para días de mucha pantalla — filtro de grado clínico, no el coating de moda.">For screen-heavy days — clinical-grade filter, not the gimmick coating.</p>
+        <div class="price"><span data-en="Add-on" data-es="Add-on">Add-on</span><strong>+$65</strong></div>
+      </div>
+      <div class="lens-card">
+        <div class="lens-num">05</div>
+        <h3><span data-en="Polarized" data-es="Polarizado">Polarized</span> <span class="it">Sun</span></h3>
+        <p data-en="Glare cut for driving, water, beach. Tinted to spec, not stocked off the shelf." data-es="Reducción de reflejo para manejar, agua, playa. Tintado a especificación.">Glare cut for driving, water, beach. Tinted to spec, not stocked off the shelf.</p>
+        <div class="price"><span data-en="Starting at" data-es="Desde">Starting at</span><strong>$135</strong></div>
+      </div>
+      <div class="lens-card">
+        <div class="lens-num">06</div>
+        <h3><span data-en="High-Index" data-es="Alto Índice">High-Index</span></h3>
+        <p data-en="For stronger prescriptions — thinner edges, lighter weight, less distortion at the periphery." data-es="Para recetas fuertes — bordes más finos, menos peso, menos distorsión periférica.">For stronger prescriptions — thinner edges, lighter weight, less distortion at the periphery.</p>
+        <div class="price"><span data-en="Add-on" data-es="Add-on">Add-on</span><strong>+$85</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDITORIAL -->
+<section class="editorial">
+  <div class="wrap">
+    <div class="ed-grid">
+      <div class="ed-img reveal">
+        <img src="https://images.unsplash.com/photo-1574870111867-089730e5a72b?auto=format&fit=crop&w=1200&q=85" alt="Editorial moment"/>
+      </div>
+      <div class="ed-text reveal">
+        <div class="eyebrow">Curation</div>
+        <h2><span data-en="No catalogue" data-es="Sin catálogo">No catalogue</span><br><span class="it" data-en="shopping." data-es="del catálogo.">shopping.</span></h2>
+        <p data-en="The frame buyer at Hicksville Optical has been to Mido, to Silmo, to the small ateliers off Rue de Charonne. The shelf reflects that — not a distributor's loyalty quota." data-es="El comprador de Hicksville Optical ha estado en Mido, en Silmo, en los talleres pequeños de Rue de Charonne. El estante refleja eso — no la cuota de un distribuidor.">The frame buyer at Hicksville Optical has been to Mido, to Silmo, to the small ateliers off Rue de Charonne. The shelf reflects that — not a distributor's loyalty quota.</p>
+        <p data-en="Frames here arrive in twos and threes. When they go, they go. The bench is small. The opinion is honest. The mark-up is fair." data-es="Los armazones aquí llegan de dos en dos, de tres en tres. Cuando se acaban, se acaban. El estante es pequeño. La opinión es honesta. El margen es justo.">Frames here arrive in twos and threes. When they go, they go. The bench is small. The opinion is honest. The mark-up is fair.</p>
+        <div style="margin-top:32px"><a href="contact.html" class="btn-arrow" data-en="Visit the studio" data-es="Visita el estudio">Visit the studio <svg width="14" height="10" viewBox="0 0 24 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 9h20M15 2l7 7-7 7"/></svg></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BLOCK -->
+<section class="cta-block">
+  <div class="wrap reveal">
+    <div class="eyebrow" data-en="Try them on" data-es="Pruébatelos">Try them on</div>
+    <h2><span data-en="Book a frame" data-es="Reserva una sesión">Book a frame</span><br><span class="it" data-en="styling session." data-es="de pruebas.">styling session.</span></h2>
+    <p data-en="One hour, no pressure, espresso on the bench. We'll pull twelve frames you'd never have picked yourself." data-es="Una hora, sin presión, espresso en el banco. Sacamos doce armazones que tú no habrías elegido.">One hour, no pressure, espresso on the bench. We'll pull twelve frames you'd never have picked yourself.</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <a href="#" data-book class="btn btn-green" data-en="Book Session" data-es="Reservar">Book Session <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      <a href="tel:+15169311010" class="btn btn-line">Call (516) 931-1010</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html" class="logo">
+          <img src="assets/brand/logo.jpg" alt="Hicksville Optical" style="height:54px"/>
+          <div class="logo-text" style="display:flex">
+            <span class="l1">Hicksville Optical</span>
+            <span class="l2">Inc. · Newbridge Rd.</span>
+          </div>
+        </a>
+        <p data-en="A neighborhood optical practice on Long Island. Clear vision, considered design, time taken." data-es="Una óptica de barrio en Long Island.">A neighborhood optical practice on Long Island.</p>
+      </div>
+      <div>
+        <h4 data-en="Practice" data-es="Consultorio">Practice</h4>
+        <a href="services.html" data-en="Services" data-es="Servicios">Services</a>
+        <a href="eyewear.html" data-en="Eyewear" data-es="Lentes">Eyewear</a>
+        <a href="about.html" data-en="About" data-es="Nosotros">About</a>
+        <a href="contact.html" data-en="Visit" data-es="Visítanos">Visit</a>
+      </div>
+      <div>
+        <h4 data-en="Visit" data-es="Visítanos">Visit</h4>
+        <p style="margin-top:0;font-style:normal;font-family:Inter;font-size:14px;color:var(--ink-2);line-height:1.6">129 Newbridge Rd<br>Hicksville, NY 11801</p>
+        <a href="https://maps.google.com/?q=129+Newbridge+Rd+Hicksville+NY" target="_blank" style="color:var(--green);font-weight:500;margin-top:10px">Open in Maps →</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+15169311010" class="big-phone">(516) 931-1010</a>
+        <a href="mailto:hicksvilleoptical@gmail.com">hicksvilleoptical@gmail.com</a>
+        <p style="margin-top:8px;font-style:normal;font-family:Inter;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);font-weight:500">Mon–Sat · 10–6</p>
+      </div>
+    </div>
+    <div class="copy">
+      <div>© <span id="year"></span> Hicksville Optical Inc.</div>
+      <div data-en="Most major insurance accepted" data-es="Aceptamos los principales seguros">Most major insurance accepted</div>
+    </div>
+  </div>
+</footer>
+
+<div class="mob-cta">
+  <a href="tel:+15169311010" class="btn btn-line" data-en="Call" data-es="Llamar">Call</a>
+  <a href="#" data-book class="btn btn-green" data-en="Book Exam" data-es="Reservar">Book Exam</a>
+</div>
+
+<!-- MODAL -->
+<div id="bookModal" class="modal">
+  <div class="modal-card">
+    <button class="modal-x" data-close>×</button>
+    <div class="eyebrow">Booking</div>
+    <h3><span data-en="Select your" data-es="Selecciona tu">Select your</span> <span class="it" data-en="visit." data-es="visita.">visit.</span></h3>
+    <p data-en="Choose what brings you in — we'll confirm within the hour." data-es="Elige el motivo de tu visita — confirmamos en menos de una hora.">Choose what brings you in.</p>
+    <div class="modal-services">
+      <div class="modal-service" data-svc="frame-styling"><div><div class="ms-name" data-en="Frame Styling Session" data-es="Sesión de Pruebas">Frame Styling Session</div></div><div class="ms-time">60 min</div></div>
+      <div class="modal-service" data-svc="new-patient"><div><div class="ms-name" data-en="New Patient Exam" data-es="Paciente Nuevo">New Patient Exam</div></div><div class="ms-time">60 min</div></div>
+      <div class="modal-service" data-svc="contact-initial"><div><div class="ms-name" data-en="Contact Lens · Initial" data-es="Lentes · Inicial">Contact Lens · Initial</div></div><div class="ms-time">45 min</div></div>
+      <div class="modal-service" data-svc="other"><div><div class="ms-name" data-en="Other" data-es="Otro">Other</div></div><div class="ms-time">30 min</div></div>
+    </div>
+    <form data-fake>
+      <div class="form-row col2">
+        <div><label class="field-label">Name <span class="req">*</span></label><input class="input" required placeholder="Your name"/></div>
+        <div><label class="field-label">Phone <span class="req">*</span></label><input class="input" type="tel" required placeholder="(516) ..."/></div>
+      </div>
+      <div class="form-row col2">
+        <div><label class="field-label">Email</label><input class="input" type="email" placeholder="you@email.com"/></div>
+        <div><label class="field-label" data-en="Preferred date" data-es="Fecha preferida">Preferred date</label><input class="input" type="date"/></div>
+      </div>
+      <button type="submit" class="btn btn-green" style="width:100%"><span data-en="Request Appointment" data-es="Solicitar Cita">Request Appointment</span></button>
+      <div data-result style="display:none;margin-top:16px;padding:14px;background:rgba(31,77,62,.08);border-left:3px solid var(--green);color:var(--green);font-family:Inter;font-size:13px;font-weight:500">✓ Request received. We'll confirm by phone within the hour.</div>
+    </form>
+  </div>
+</div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+const hdr = document.getElementById('header');
+window.addEventListener('scroll', () => { hdr.classList.toggle('scrolled', window.scrollY > 12); }, {passive: true});
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal, .stagger').forEach(el => io.observe(el));
+
+const mb = document.getElementById('menuBtn'), mp = document.getElementById('menuPanel'), mback = document.getElementById('menuBack'), mclose = document.getElementById('menuClose');
+function openMenu(){ mp.classList.add('open'); mback.classList.add('open'); }
+function closeMenu(){ mp.classList.remove('open'); mback.classList.remove('open'); }
+mb && mb.addEventListener('click', openMenu);
+mclose && mclose.addEventListener('click', closeMenu);
+mback && mback.addEventListener('click', closeMenu);
+mp && mp.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+const I18N_KEY = 'hk-lang';
+function applyLang(lang) {
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-en],[data-es]').forEach(el => {
+    const v = el.getAttribute('data-' + lang);
+    if (v != null) el.textContent = v;
+  });
+  document.querySelectorAll('.lang-toggle button').forEach(b => b.classList.toggle('active', b.getAttribute('data-lang') === lang));
+  try { localStorage.setItem(I18N_KEY, lang); } catch(_) {}
+}
+const savedLang = (() => { try { return localStorage.getItem(I18N_KEY); } catch(_) { return null; } })() || 'en';
+applyLang(savedLang);
+document.querySelectorAll('.lang-toggle button[data-lang]').forEach(btn => btn.addEventListener('click', () => applyLang(btn.getAttribute('data-lang'))));
+
+const bm = document.getElementById('bookModal');
+document.querySelectorAll('[data-book]').forEach(el => el.addEventListener('click', (e) => { e.preventDefault(); bm.classList.add('open'); }));
+document.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', () => bm.classList.remove('open')));
+bm && bm.addEventListener('click', (e) => { if (e.target === bm) bm.classList.remove('open'); });
+
+document.querySelectorAll('.modal-service').forEach(s => s.addEventListener('click', () => {
+  document.querySelectorAll('.modal-service').forEach(x => x.classList.remove('selected'));
+  s.classList.add('selected');
+}));
+
+document.querySelectorAll('form[data-fake]').forEach(f => f.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const r = f.querySelector('[data-result]');
+  if (r) r.style.display = 'block';
+  f.reset();
+  document.querySelectorAll('.modal-service').forEach(x => x.classList.remove('selected'));
+}));
+
+// Filter
+document.querySelectorAll('#filterBar button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('#filterBar button').forEach(x => x.classList.remove('on'));
+  b.classList.add('on');
+  const f = b.getAttribute('data-filter');
+  document.querySelectorAll('.fcard').forEach(c => {
+    c.style.display = (f === 'all' || c.getAttribute('data-cat') === f) ? '' : 'none';
+  });
+}));
+</script>
+
+</body>
+</html>
